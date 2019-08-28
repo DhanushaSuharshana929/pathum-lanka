@@ -177,16 +177,16 @@ $BOX_SECTION_OBJ = new IndexBoxSection(null);
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="text">
-                                        <p>Tropical travel destination Sri Lanka is becoming famous throughout the world day by day. Mostly balanced weather conditions that has firmly gifted with 12-hour sunshine in the whole year, one of the richer cultural heritage of the world that sought by majority, fascinating scenic beauty can be reached at all ten directions, and world renowned best travel destination is now stand by to welcome you.</p>
+                                        <p>This is Pathum, your tour guide and chauffeur at your visit to Sri Lanka. There is no barrier to travel whole over the country with a Tourist Board certified chauffeur, it is about helping people achieve their dream journey. Ascertaining much with career history able to cover whole country with historical, leisure, nature, adventure, and religious sites. It is sure, you seek for an Educated and Honest guy, you’ve reached the end. Come, let us have a decent tour on a standard vehicle.</p>
                                         <h6 class="small-title">What We Do</h6>
                                         <ul class="about-list">
-                                            <li>Transportation with comfortability</li>
-                                            <li>Educate with creative narrations</li>
+                                            <li>Organize a tour based on your requirement and budget</li>
+                                            <li>Comfortable accommodation suitable to your budget</li>
+                                            <li>Secure & Comfortable Travel Service</li>
                                             <li>Coordinating in English</li>
-                                            <li>Ethical manners</li>
-                                            <li>Customized or/and package tours</li>
+                                            <li>Ethical & Protection service from Tourist Chauffeur</li>
                                             <!--                                            <li>Tour Beefing And Assistance</li>-->
-                                            <li>Arrange Your Accommodations</li>
+                                            <!--<li>Arrange Your Accommodations</li>-->
                                         </ul>
                                     </div>
                                 </div>
