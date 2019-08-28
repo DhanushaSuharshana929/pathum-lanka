@@ -309,13 +309,12 @@ $BOX_SECTION_OBJ = new IndexBoxSection(null);
                         </div>
                         <!--Section Heading End-->
                         <div class="row">
-                            <div class="col-md-6 col-sm-12 " id="feedback">
+                            <div class="col-md-4 col-sm-12 " id="feedback">
                                 <div class="testimonial-slider-2 row box-arrow">
                                     <?php
                                     $COMMENTS = Comments::activeComments($id);
                                     foreach ($COMMENTS as $key => $comments) {
                                         ?>
-                                        <!--Testimonial Thumb Start-->
                                         <div class="testimonial-2">
                                             <div class="media-left">
                                                 <a href="#">
@@ -323,25 +322,23 @@ $BOX_SECTION_OBJ = new IndexBoxSection(null);
                                                 </a>
                                             </div>
                                             <div class="media-body">
-                                                <h4 class="media-heading"><?php echo $comments["name"]; ?>
-
-                                                    <span class="designation"><?php echo $comments["title"]; ?></span>
-                                                </h4>
-                                                <p> <?php echo $comments["comment"]; ?></p>
+                                                <div class="testimonial-tripad"><img src="images/tripadvisor_stars.png"></div>
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.</p>
+                                                <div style="float: right;"><img src="images/tripadvisor_outline.png"></div>
+                                                <div style="margin-top: 20px;"><h6 class=""><?php echo $comments["name"]; ?></h6></div>
                                             </div>
                                         </div>
-                                        <!--Testimonial Thumb End-->
 
                                         <?php
                                     }
                                     ?>
-                      
+
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-12 ">
+                            <div class="col-md-4 col-sm-12 ">
                                 <iframe width="100%" height="297" src="https://www.youtube.com/embed/pmQN9RrEGnE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
                             </div>
-                            <div class="col-md-3 col-sm-12 " id="tripad">
+                            <div class="col-md-4 col-sm-12 " id="tripad">
                                 <div id="TA_selfserveprop837" class="TA_selfserveprop"><ul id="KEWHRuWIMV" class="TA_links JexZnt"><li id="jgAYPb" class="l6iiPyjaMW"><a target="_blank" href="https://www.tripadvisor.com/"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/150_logo-11900-2.png" alt="TripAdvisor"/></a></li></ul></div><script async src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=837&amp;locationId=12948667&amp;lang=en_US&amp;rating=true&amp;nreviews=0&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=false&amp;border=true&amp;display_version=2" data-loadtrk onload="this.loadtrk = true"></script>
 
                             </div>
