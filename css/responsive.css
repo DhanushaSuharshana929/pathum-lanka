@@ -1,0 +1,599 @@
+@charset 'UTF-8';
+@media (min-width: 1367px) and (max-width: 1680px) {} @media (min-width: 1200px) and (max-width: 1366px) {} 
+/*
+          ============================================================
+                  MEDIA SCREEN 992px TO 1199px
+          ============================================================
+*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .main-banner-3 .banner-title{
+        font-size: 50px;
+    }
+    .search_one.absolute{
+        bottom: 0;
+    }
+    .banner-caption .banner-title {
+        font-size: 60px;
+        margin: 0 0 10px;
+    }
+    .banner-caption .banner-caption{
+        margin: 0 0 15px;
+    }
+    .destination-thumb{
+        min-height: auto;
+    }
+    .equal-height .destination-thumb{
+        min-height: 216px;
+    }
+    .col-md-3 .destination-thumb .text p{
+        float: left;
+        width: 100%;
+        overflow: hidden;
+        max-height: 70px;
+    }
+    #Upgrade .upgrade-text .brand-list{
+        float: left;
+        width: 100%;
+        padding: 10px 0 0 0;
+    }
+    #Upgrade .upgrade-list .upgrade-text .upgrade-header{
+        float: left;
+        width: 100%;
+    }
+    #Upgrade .upgrade-list .upgrade-text .upgrade-header .rating_down{
+        float: right;
+    }
+    .sidebar .widget{
+        padding-right:20px; 
+        padding-left:20px; 
+    }
+    .detail-tabs .nav-tabs > li > a{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .blog-grid-2 .blog-thumb .text{
+        padding: 20px;
+    }
+    .login-register-form .input-container label span{
+        font-size: 13px;
+    }
+    .widget-contact .social li a {
+        height: 30px;
+        width: 30px;
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+
+}
+/*
+          ============================================================
+                  MEDIA SCREEN 0px TO 991px
+          ============================================================
+*/
+@media (max-width: 991px) {
+    .popular-hotel .absolute .text{
+        padding-left:25px; 
+        padding-right:25px; 
+    }
+    .main-banner-3 .banner-title {
+        font-size: 50px;
+    }
+    .main-banner-3 .tab-nav-3 > li {
+        margin: 0 0 -5px 10px;
+    }
+    .main-banner-3 .tab-nav-3 > li a{
+        font-size: 15px;
+    }
+    .error-page .text{
+        max-width: 85%;
+    }
+    .widget-contact .social li a {
+        height: 30px;
+        width: 30px;
+        font-size: 14px;
+        line-height: 30px;
+    }
+    .detail-tabs{
+        float: left;
+        width: 100%;
+        margin: 0 0 30px;
+    }
+    .search_wraper{
+        background: rgba(255, 255, 255, 0.8);
+    }
+    .search_wraper .container{
+        float: left;
+        width: 100%;
+        display: block;
+    }
+    .search_wraper .container .container{
+        padding: 0;
+    }
+    .search_one.absolute{
+        float: left;
+        width: 100%;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        top: auto;
+        position: relative;
+    }
+    .banner-caption .banner-title {
+        font-size: 60px;
+    }
+    .has-search .banner-contant-wrapper{
+        top: 50%;
+    }
+    .tab-nav-2 li a{
+        font-size: 12px;
+    }
+    .news-letter .text .title{
+        font-size: 27px;
+    }
+    #contact-form{
+      margin-left:0px;
+margin-right: 0px;
+    }
+    .form-control{
+        margin-bottom: 10px;
+    }
+   
+}
+/*
+          ============================================================
+                  MEDIA SCREEN 768px TO 979px
+          ============================================================
+*/
+
+@media (min-width: 768px) {
+    .banner-search_tab {
+padding: 24px 4px 24px;
+    }
+}  
+/*
+          ============================================================
+                  MEDIA SCREEN 768px TO 979px
+          ============================================================
+*/
+@media (max-width: 767px) {
+    .blog-grid .text-overflow:first-child{
+        margin-bottom: 23px;
+    }
+    .tab-content-1.long .banner-search-tab{
+        display: block;
+    }
+    .tab-content-1.long .banner-search-tab .input-field{
+        width: 50%;
+        max-width: 50%;
+        margin-bottom: 30px;
+        padding: 0 2px;
+    }
+    #train .banner-search-tab .input-field,
+    .tab-content-1.long .banner-search-tab .input-field:last-child,
+    .tab-content-1.long .banner-search-tab .input-field:nth-child(3){
+        width: 100%;
+        max-width: 100%;
+    }
+    .masonry.row{
+        float: none;
+        width: auto;
+        clear: both;
+    }
+    .main-banner-3 .flex-text{
+        display: block;
+    }
+    .grid-item{
+        width: 100% !important;
+    }
+    .main-banner-3 .tabs-wrapper{
+        margin:0 0 30px; 
+    }
+    .main-banner-3 .banner-outer-div{
+        padding: 30px 0;
+    }
+    .error-page .text{
+        max-width: 95%;
+    }
+    .default-accordion .accordion{
+        font-size: 20px;
+    }
+    .default-accordion .accordion::before{
+        font-size: 20px;
+        line-height: 49px;
+    }
+    .similar-products .title{
+        font-size: 14px;
+    }
+    .detail-tag-wrap{
+        text-align: center;
+    }
+    .detail-tag-wrap .page-navigation,
+    .detail-tag-wrap .social{
+        width: 100%;
+    }
+    .detail-tag-wrap .social{
+        margin: 0 0 7px;
+    }
+    .detail-tag-wrap .page-navigation a{
+        float: none;
+        display: inline-block;
+    }
+    #items-grid2 .port-item{
+        width: 100%;
+    }
+    .sub-banner .breadcrumb{
+        padding-left:60px; 
+        padding-right:60px; 
+    }
+    .blog-list{
+        padding: 0;
+    }
+    .blog-list figure,
+    .blog-grid figure {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        margin: 0 0 0px !important;
+    }
+    .blog-list .text-overflow,
+    .blog-grid .text-overflow{
+        float: left;
+        width: 100%;
+        padding: 26px 0 0 0;
+    }
+    .blog-list .text-overflow{
+        padding: 25px;
+    }
+    .flex-text.blog-list,
+    .flex-text.blog-grid{
+        display: block;
+    }
+    .detail-tabs .nav-tabs{
+        margin-right:-1px; 
+        margin-left:-1px; 
+    }
+    .detail-tabs .nav-tabs li{
+        padding-right:1px; 
+        padding-left:1px; 
+    }
+    .detail-tabs .nav-tabs > li > a{
+        font-size: 14px;
+        padding-left:10px; 
+        padding-right:10px; 
+    }
+    .header1 .logo{
+        padding: 8px 0;
+        width:42%;
+    }
+    .navigation{
+        display: none;
+    }
+    .dl-menuwrapper{
+        float: right;
+        display: block
+    }
+
+    .main-wrapper{
+        overflow: hidden;
+    }
+    .top-bar [class*="pull-"]{
+        width: 100%;
+        text-align: center;
+    }
+    .top-bar .nav-account{
+        width: 100%;
+    }
+    .top-bar .nav-account li{
+        float: none;
+        display: inline-block;
+    }
+    .top-bar .pull-left .nav-account > li{
+        padding-bottom:0; 
+    }
+    .inner-header.affix{
+        margin: 0 !important;
+        position: static !important;
+        background: #fff;
+    }
+    .sub-banner p{
+        font-size: 13px;
+    }
+    .banner-contant-wrapper{
+        padding-left:15px; 
+        padding-right:15px; 
+    }
+    .banner-caption .banner-title {
+        font-size: 40px;
+    }
+    .banner-search_tab{
+/*        background: rgba(0, 0, 0, 0.5);*/
+    }
+    .tab-nav-2 li a{
+        overflow: hidden;
+        padding-left:5px; 
+        padding-right:5px; 
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .destination-thumb{
+        min-height: auto;
+    }
+    .testimonial-slider .text p{
+        float: left;
+        width: 100%;
+        max-width: 100%;
+        font-size: 14px; 
+    }
+    .testimonial-slider .slick-slide{
+        padding: 0 15px;
+    }
+    .news-letter .flex-text{
+        display: block;
+        max-width: 481px;
+        text-align: center;
+    }
+    .news-letter .text{
+        margin: 0 0 30px;
+    }
+    .news-letter .text .title {
+        font-size: 24px;
+    }
+
+    .footer1{
+        float: left;
+        width: 100%;
+        position: relative;
+        padding: 20px 0 0px;
+
+        background: #002644;
+        /*    background-image: url('./images/footer.jpg');*/
+    }
+    .copy-right [class*="pull-"]{
+        width: 100%;
+        text-align: center;
+    }
+    .copy-right [class*="pull-"]:first-child{
+        margin-bottom: 10px;
+    }
+    .copy-right .social li{
+        float: none;
+        display: inline-block;
+        margin-bottom: -5px; 
+    }
+
+    .upgrade-list li figure{
+        width: 100%;
+    }
+    .upgrade-list li .upgrade-text{
+        float: left;
+        width: 100%;
+        padding:26px 0 0px;
+    }
+    .upgrade-list .upgrade-text .upgrade-header .rating_down{
+        float: right;
+    }
+    .upgrade-list .upgrade-text .upgrade-header{
+        float: left;
+        width: 100%;
+    }
+    .upgrade-text .brand-list{
+        float: left;
+        width: 100%;
+        padding: 6px 0 0px;
+    }
+    .about-text .feature-list li {
+        width: 100%;
+        font-size: 18px;
+        font-weight: normal;
+    }
+    .header1{
+        top: 0;
+        float: left; 
+        width: 100%;
+        background-color:#fff9;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
+        position: relative;
+        /*    z-index: 9999;*/
+    }
+    .plan-your-trip-parallex {
+        background:#000;
+        height:600px;
+        padding-bottom: 50px;
+        /*    background-attachment: fixed;*/
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    #plan-btn{
+        padding-bottom: 50px;
+    }
+    .trip-banner h3 {
+        color: #29aae3;
+        padding-bottom:10px;
+    }
+    #tripad{
+        top: 20px;
+    }
+    #feedback{
+        top:0px;
+    }
+
+    .search_one{
+        display: block;
+    }
+    #head-email a {
+        display: none; 
+    }
+    #head-contact a {
+        display: none;
+    }
+    #head-email i{
+        display: none; 
+    }
+    #head-contact i{
+        display: none;
+    }
+    #btn-newsletter{
+        margin-left:0%;
+    }
+}   
+/*
+          ============================================================
+                  MEDIA SCREEN 992px TO 1199px
+          ============================================================
+*/
+@media (max-width: 715px) {
+
+} 
+/*
+          ============================================================
+                  MEDIA SCREEN 0 TO 480px
+          ============================================================
+*/
+@media (max-width: 480px) {
+    .tab-nav-3 > li{
+        margin-left:7px;
+    }
+    .destination-thumb-3 p {
+        max-height: 50px;
+        overflow: hidden;
+    }
+    .main-banner-3 .banner-caption .banner-title {
+        font-size: 31px;
+    }
+    .popular-hotel .absolute .text{
+        padding-left:20px; 
+        padding-right:20px; 
+    }
+    .popular-hotel .title{
+        font-size: 15px;
+    }
+    .error-page h1{
+        font-size: 140px;
+    }
+    .error-page h6{
+        font-size: 30px;
+    }
+    .login-register-form .input-field{
+        text-align: left;
+    }
+    .login-register-form .input-container{
+        float: left;
+        width: 100%;
+        margin: 0 0 5px;
+    }
+    .sidebar .widget{
+        padding-left:25px; 
+        padding-right:25px; 
+    }
+    .detail-tag-wrap .social li{
+        margin: 0 4px;
+    }
+    .similar-products figure{
+        margin: 0 15px 0 0;
+    }
+    .detail-tabs .nav-tabs li{
+        width: 50%;
+        margin: 0 0 2px;
+    }
+    .top-bar .social li{
+        margin: 0 3px;
+    }
+    .home-slider .banner-caption{
+        display: none;
+    }
+    .tab-nav-2 li{
+        width: 50%;
+    }
+    .tab-nav-2 li:nth-child(5){
+        width: 100%;
+    }
+    .section-heading .title{
+        font-size: 26px;
+    }
+    .choose-us span[class*="iq-"]{
+        float: none;
+        display: block;
+        margin: 0 auto 30px;
+    }
+    .choose-us{
+        padding: 30px;
+        text-align: center;
+    }
+    .center.thumb .text p{
+        display: none;
+    }
+    .holiday-thumb .absolute .text{
+        max-width: 85%;
+    }
+    .upgrade-list > li{
+        padding: 20px;
+    }
+    .upgrade-footer p.price {
+        font-size: 14px;
+        margin-right:21px;
+    }
+    .upgrade-footer a.detail{
+        padding-right:25px; 
+        padding-left:25px; 
+    }
+    .index-box-4-container{
+        margin-top:0px; 
+    }
+    .about-text .feature-list li {
+        width: 100%;
+        font-size: 18px;
+        font-weight: normal;
+    }
+    .footer1{
+        float: left;
+        width: 100%;
+        position: relative;
+        padding: 20px 0 0px;
+
+        background: #002644;
+        /*    background-image: url('./images/footer.jpg');*/
+    }
+    .tab-content{
+        float: right;
+        width: 30%;
+        height: 8px;
+        position: relative;
+        align-content: center;
+        margin-top: -175px;
+        background: none;
+    }
+    .banner-search_tab {
+
+        padding: 5px 5px 5px;
+    }
+}
+@media (min-width: 480px) and (max-width: 900px) {
+    .tab-content{
+        float: right;
+        width: 35%;
+        height: 0px;
+        position: relative;
+        align-content: center;
+        margin-top: -330px;
+    }
+} 
+@media (min-width: 480px) and (max-width: 900px) {
+    .banner-search_tab {
+
+        padding: 4px 4px 4px;
+    }
+}  
+
+@media (min-width: 900px) and (max-width: 1193px) {
+    .tab-content {
+    float: right;
+    width: 20%;
+    height: 270px;
+    position: relative;
+    }
+       
+} 
