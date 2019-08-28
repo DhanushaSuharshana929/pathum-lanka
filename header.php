@@ -52,19 +52,18 @@
                 <nav id="navigation" class="navigation"> 
                     <ul>           
                         <li class="active"><a href="index.php">Home</a></li>
+                        <li><a href="services.php">Services</a></li>
+                        <li><a href="tour-packages.php?type=1">Day Tours</a></li>
+                        <li><a href="tour-packages.php?type=2">Tour Packages</a></li>
+                        <li><a href="gallery.php">Gallery</a></li>
+                        <li><a href="booking.php">Tailor Made Tour</a></li>
                         <li> 
-                            <a href="tour-packages.php"> Packages</a> 
+                            <a href="#"> Excursions</a> 
                             <ul class="children"> 
-                                <li><a href="tour-packages.php?type=1">One Day Tours</a></li> 
-                                <li><a href="tour-packages.php?type=2">Round Tours</a></li> 
+                                <li><a href="things-to-do.php">Things to do</a></li> 
+                                <li><a href="destination.php">Destination</a></li>
                             </ul> 
                         </li> 
-                        <li><a href="services.php">Services</a></li> 
-                        <li><a href="booking.php">Tailor Made Tour</a></li>
-                        <li><a href="things-to-do.php">Things to do</a></li> 
-                        <li><a href="destination.php">Destination</a></li>
-                        <li><a href="gallery.php">Gallery</a></li>
-                        <li><a href="about.php">About</a></li>
                         <li><a href="contact.php">Contact</a></li>
                     </ul>
                 </nav>
