@@ -1,0 +1,263 @@
+@charset 'UTF-8';
+/*
+          ============================================================
+                   Font Color
+          ============================================================
+*/
+p a,
+.th-cl,
+.th-cl a,
+.highlight,
+.read-more:hover,
+.df-button:hover,
+.navigation li:hover > a,
+.header1 .navbar-nav > .active > a,
+.header1 .navbar-nav > .active > a:focus,
+.header1 .navbar-nav > .active > a:hover,
+.header1 .navbar-nav > li:hover > a,
+.destination-thumb .title:hover a,
+/*Header 2 Css Start*/
+.header2 .navigation ul li:hover > a,
+/*Header 2 Css Ends*/
+.nav-account ul.options li:hover,
+.sub-banner ol li.active,
+.footer1 .widget_pages ul li a:before,
+.blog-grid:hover .title a,
+.comment-wrap .media-heading .designation,
+.policy-agree-text a,
+.sub-banner p:before, 
+.upgrade-list .upgrade-text h6, 
+.upgrade-footer p.price span,
+.widget_categories ul li a:hover,
+.similar-products .price,
+#flickr-feeds li a:hover::before,
+.choose-us-2:hover .title a,
+.choose-us-2:hover span,
+.destination-thumb2:hover .title a,
+.box-arrow .slick-arrow:hover,
+.tab-nav-3 > li.active a,
+.tab-nav-3 > li a:focus,
+.tab-nav-3 > li a:hover,
+.tab-nav-3 > li.active a
+{
+
+    color:#fff;
+
+}
+/*
+          ============================================================
+                   Background Color
+          ============================================================
+*/
+/*Dont Remove*/
+.th-bg,
+.df-button:hover,
+.navbar-toggle,
+.dl-menuwrapper li a:hover,
+.dl-menuwrapper button:hover, .dl-menuwrapper button.dl-active,
+.navbar .collapse.in .navbar-nav > li > a:hover,
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover,
+.navbar-nav > li:hover > a,
+.navbar-nav > .open > a, 
+.navbar-nav > .open > a:hover, 
+.navbar-nav > .open > a:focus,
+.navbar-nav > .active > a, .navbar-nav > .active > a:focus, .navbar-nav > .active > a:hover,
+/*Dont Remove
+.choose-us:hover,*/
+.section-heading .title::after,
+.section-heading .title::before,
+.dot-style .slick-dots li.slick-active,
+.header1 .navigation > ul > li > a::after,
+.header1 .navigation > ul > li > a::before,
+/*.header1 .top-bar,*/
+.brand-slider .thumb:hover, 
+.detail-tabs .nav-tabs>li>a:hover,
+.detail-tabs .nav-tabs>li>a:focus, 
+.detail-tabs .nav-tabs>li.active>a, 
+.detail-tabs .nav-tabs>li.active>a::before, 
+.upgrade-footer a.detail,
+.tagcloud a:hover,
+.iqt-pagination .page-numbers.current,
+.iqt-pagination .page-numbers:hover,
+.triangle-arrow .slick-arrow:hover,
+.banner-hotel_search li a,
+.options li:hover,
+.destination-thumb2 figure a::after,
+.blog-thumb figure::after,
+.destination-thumb-3 figure,
+/*Tabs Styles Start*/
+.tab-nav-1 li.active a,
+.tab-nav-1 li a:hover,
+.tab-nav-2 li.active a,
+.tab-nav-2 li a:hover,
+.tab-nav-3 > li a em::after,
+.tab-nav-3 > li a em::before, 
+.navigation ul li ul li:hover a,
+.navigation ul li .sub-menu li:hover a,
+.navigation ul li .children li:hover a, 
+.widget-contact .social li a:hover
+/*Tabs Styles Start*/
+{
+
+    background: -webkit-linear-gradient(#15a2e0, #fb0000);
+    background:    -moz-linear-gradient(#15a2e0, #fb0000);
+    background:         linear-gradient(#15a2e0, #fb0000);
+}
+.search_wraper.th-bg{
+    background-color: -webkit-linear-gradient(#15a2e0, #fb0000);
+    background-color:    -moz-linear-gradient(#15a2e0, #fb0000);
+    background-color: linear-gradient(#15a2e0, #fb0000)!important;
+}
+/*
+          ============================================================
+                   Border Color
+          ============================================================
+*/
+/*Dont Remove*/
+.navbar-default,
+blockquote,
+.tagcloud a:hover,
+.dl-menuwrapper li a,
+.dl-menuwrapper li a:hover,
+.radio-1 input:checked + .radio-value,
+.sidebar .widget::before,
+.iqt-pagination .page-numbers.current,
+.iqt-pagination .page-numbers:hover, 
+.widget-contact .social li a:hover
+/*Dont Remove*/
+{
+   	
+    border-color : -webkit-linear-gradient(#15a2e0, #fb0000);
+    border-color:    -moz-linear-gradient(#15a2e0, #fb0000);
+    border-color:         linear-gradient(#15a2e0, #fb0000);
+}
+/*
+          ============================================================
+                   Transaction Effect
+          ============================================================
+*/
+/*Dont Remove*/
+select,
+input,
+textarea,
+figure,
+.title,
+.thumb,
+.title a,
+.absolute,
+.read-more,
+.read-more,
+.df-button,
+ul.children,
+.slick-arrow,
+.dl-menuwrapper li a,
+.page-numbers,
+.widget_rss ul li,
+.widget_meta ul li,
+.widget_pages ul li,
+.widget_archive ul li,
+.widget_nav_menu ul li,
+.widget_categories ul li,
+.widget_recent_comments ul li,
+.widget_recent_entries ul li,
+.widget_rss ul li a,
+.widget_meta ul li a,
+.widget_pages ul li a,
+.widget_archive ul li a,
+.widget_nav_menu ul li a,
+.widget_categories ul li a,
+.widget_recent_comments ul li a,
+.widget_recent_entries ul li a,
+.widget_rss ul li,
+.widget_meta ul li,
+.widget_pages ul li,
+.widget_archive ul li,
+.widget_nav_menu ul li,
+.widget_categories ul li,
+.widget_recent_comments ul li,
+.widget_recent_entries ul li,
+.widget_rss ul li a:before,
+.widget_meta ul li a:before,
+.widget_pages ul li a:before,
+.widget_archive ul li a:before,
+.widget_nav_menu ul li a:before,
+.widget_categories ul li a:before,
+.default-accordion .accordion::before,
+.widget_recent_comments ul li a:before,
+.widget_recent_entries ul li a:before,
+.room-detail-slider .slider-nav figure:before,
+.header1 .navigation ul li a::after,
+.header1 .navigation ul li a::before,
+#header#navigation ul li a::after,
+#header#navigation ul li a::before,
+ul.options li,
+ul.options,
+.price-tag,
+.tagcloud a,
+.navbar li,
+.tab-nav-3 a,
+.tab-nav-3 em::before,
+.tab-nav-3 em::after,
+.navbar li a,
+.navbar li a::after,
+.navbar li a::before,
+.dropdown-menu li,
+.dropdown-menu li a,
+.navigation ul li a,
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a,
+/*Dont Remove*/
+.brand-slider .thumb,
+.choose-us,
+.choose-us:before,
+.choose-us:after,
+.choose-us p,
+.destination-thumb,
+.holiday-thumb .text,
+.holiday-thumb .absolute,
+.blog-grid,
+.destination-thumb *,
+.social li a, 
+.detail-tabs .nav-tabs>li>a,
+ul.nav li > ul.dropdown-menu,
+#flickr-feeds li a::before,
+#flickr-feeds li a::after,
+#flickr-feeds li a,
+.destination-thumb img,
+.main-banner,
+.home-slider,
+.choose-us-2 *,
+.blog-thumb,
+.blog-thumb *,
+.destination-thumb-3,
+.destination-thumb-3 *,
+.choose-us-outer-wrap,
+.blog-thumb figure::after,
+.destination-thumb2 figure img,
+.destination-thumb2 figure a::after,
+.tab-nav-2 li a, 
+.upgrade-list > li,
+.dl-menuwrapper button
+{
+    -webkit-transition:all 0.3s ease-in-out;
+    -moz-transition:all 0.3s ease-in-out;
+    -moz-transition:all 0.3s ease-in-out;	
+    -o-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+}
+/*
+          ============================================================
+                  Content Selection
+          ============================================================
+*/
+::selection {
+    background: #f4b843;
+    color:#ffffff;
+}
+::-webkit-selection {
+    background: #f4b843;
+    color: #ffffff;
+}
+::-moz-selection {
+    background: #f4b843;
+    color: #ffffff;
+}
