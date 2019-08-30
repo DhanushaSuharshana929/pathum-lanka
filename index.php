@@ -214,8 +214,14 @@ $BOX_SECTION_OBJ = new IndexBoxSection(null);
                                         break;
                                     }
                                     ?>
+                                
                                     <div class="col-12 col-md-4 col-lg-4">
                                         <a href="tour-packages-view.php?id=<?php echo $tour_package["id"]; ?>">
+                                            <div class="col-md-3">
+                                                <div  class="">
+                                                    <div class="ribbon red">FROM <strong class="rbn-price">$<?php echo $tour_package['start_price']; ?></strong>/Person</div>
+                                                </div>
+                                            </div>
                                             <div class="single-rooms-area wow fadeInUp" data-wow-delay="100ms">
                                                 <!-- Thumbnail -->
                                                 <div class="bg-thumbnail bg-img" style="background-image: url(upload/tour-package/<?php echo $tour_package["image_name"]; ?>);"></div>

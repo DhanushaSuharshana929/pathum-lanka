@@ -10,9 +10,11 @@ if (isset($_POST['create'])) {
     $TOUR_PACKAGE->title = $_POST['title'];
     $TOUR_PACKAGE->type = $_POST['type'];
     $TOUR_PACKAGE->day = $_POST['day'];
+    $TOUR_PACKAGE->start_price = $_POST['start_price'];
     $TOUR_PACKAGE->short_description = $_POST['short_description'];
     $TOUR_PACKAGE->description = $_POST['description'];
     $TOUR_PACKAGE->highlights = $_POST['highlights'];
+    $TOUR_PACKAGE->price_list = $_POST['price_list'];
 
     $dir_dest = '../../upload/tour-package/';
 
@@ -42,9 +44,11 @@ if (isset($_POST['create'])) {
         'title' => ['required' => TRUE],
         'type' => ['required' => TRUE],
         'day' => ['required' => TRUE],
+        'start_price' => ['required' => TRUE],
         'short_description' => ['required' => TRUE],
         'description' => ['required' => TRUE],
         'highlights' => ['required' => TRUE],
+        'price_list' => ['required' => TRUE],
         'image_name' => ['required' => TRUE],
     ]);
 
@@ -108,9 +112,11 @@ if (isset($_POST['update'])) {
     $TOUR_PACKAGE->type =$_POST['type'];
     $TOUR_PACKAGE->title =$_POST['title'];
     $TOUR_PACKAGE->day = $_POST['day'];
+    $TOUR_PACKAGE->start_price = $_POST['start_price'];
     $TOUR_PACKAGE->short_description = $_POST['short_description'];
     $TOUR_PACKAGE->description = $_POST['description'];
     $TOUR_PACKAGE->highlights = $_POST['highlights'];
+    $TOUR_PACKAGE->price_list = $_POST['price_list'];
 
 
     $VALID = new Validator();
@@ -119,9 +125,11 @@ if (isset($_POST['update'])) {
         'type' => ['required' => TRUE],
         'title' => ['required' => TRUE],
         'day' => ['required' => TRUE],
+        'start_price' => ['required' => TRUE],
         'short_description' => ['required' => TRUE],
         'description' => ['required' => TRUE],
         'highlights' => ['required' => TRUE],
+        'price_list' => ['required' => TRUE],
         'image_name' => ['required' => TRUE],
     ]);
 
