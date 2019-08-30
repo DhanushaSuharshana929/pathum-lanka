@@ -77,6 +77,14 @@ include_once(dirname(__FILE__) . '/auth.php');
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group form-float">
+                                            <div class="form-line">
+                                                <input type="text" id="price" class="form-control" autocomplete="off" name="start_price" required="true">
+                                                <label class="form-label">Start Price</label>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="col-md-12">                                       
                                         <div class="form-group form-float">
                                             <div class="form-line">
@@ -104,6 +112,12 @@ include_once(dirname(__FILE__) . '/auth.php');
                                         <label for="highlights">Highlights</label>
                                         <div class="form-line">
                                             <textarea id="highlights" name="highlights" class="form-control long-text" rows="6"></textarea> 
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <label for="price_list">Price List</label>
+                                        <div class="form-line">
+                                            <textarea id="price_list" name="price_list" class="form-control long-text" rows="6"></textarea> 
                                         </div>
                                     </div>
 

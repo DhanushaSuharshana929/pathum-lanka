@@ -133,13 +133,13 @@
         font-size: 27px;
     }
     #contact-form{
-      margin-left:0px;
-margin-right: 0px;
+        margin-left:0px;
+        margin-right: 0px;
     }
     .form-control{
         margin-bottom: 10px;
     }
-   
+
 }
 /*
           ============================================================
@@ -149,7 +149,7 @@ margin-right: 0px;
 
 @media (min-width: 768px) {
     .banner-search_tab {
-padding: 24px 4px 24px;
+        padding: 24px 4px 24px;
     }
 }  
 /*
@@ -308,7 +308,7 @@ padding: 24px 4px 24px;
         font-size: 40px;
     }
     .banner-search_tab{
-/*        background: rgba(0, 0, 0, 0.5);*/
+        /*        background: rgba(0, 0, 0, 0.5);*/
     }
     .tab-nav-2 li a{
         overflow: hidden;
@@ -570,6 +570,13 @@ padding: 24px 4px 24px;
 
         padding: 5px 5px 5px;
     }
+    .ribbon {
+        position: absolute;
+        top: 80px;
+        right: -360px;
+        padding: 15px;
+        z-index: 1111;
+    }
 }
 @media (min-width: 480px) and (max-width: 900px) {
     .tab-content{
@@ -579,6 +586,13 @@ padding: 24px 4px 24px;
         position: relative;
         align-content: center;
         margin-top: -330px;
+    }
+    .ribbon {
+        position: absolute;
+        top: 60px;
+        right: -250px;
+        padding: 5px;
+        z-index: 1111;
     }
 } 
 @media (min-width: 480px) and (max-width: 900px) {
@@ -590,10 +604,10 @@ padding: 24px 4px 24px;
 
 @media (min-width: 900px) and (max-width: 1193px) {
     .tab-content {
-    float: right;
-    width: 20%;
-    height: 270px;
-    position: relative;
+        float: right;
+        width: 20%;
+        height: 270px;
+        position: relative;
     }
-       
+
 } 

@@ -18,15 +18,17 @@ class TourPackage {
     public $type;
     public $image_name;
     public $day;
+    public $start_price;
     public $short_description;
     public $description;
     public $highlights;
+    public $price_list;
     public $queue;
 
     public function __construct($id) {
         if ($id) {
 
-            $query = "SELECT `id`,`type`,`title`,`image_name`,`day`,`short_description`,`description`,`highlights`,`queue` FROM `tour_package` WHERE `id`=" . $id;
+            $query = "SELECT `id`,`type`,`title`,`image_name`,`day`,`start_price`,`short_description`,`description`,`highlights`,`price_list`,`queue` FROM `tour_package` WHERE `id`=" . $id;
 
             $db = new Database();
 
@@ -37,9 +39,11 @@ class TourPackage {
             $this->title = $result['title'];
             $this->image_name = $result['image_name'];
             $this->day = $result['day'];
+            $this->start_price = $result['start_price'];
             $this->short_description = $result['short_description'];
             $this->description = $result['description'];
             $this->highlights = $result['highlights'];
+            $this->price_list = $result['price_list'];
             $this->queue = $result['queue'];
 
             return $this;
@@ -48,14 +52,16 @@ class TourPackage {
 
     public function create() {
 
-        $query = "INSERT INTO `tour_package` (`title`,`type`,`image_name`,`day`,`short_description`,`description`,`highlights`,`queue`) VALUES  ('"
+        $query = "INSERT INTO `tour_package` (`title`,`type`,`image_name`,`day`,`start_price`,`short_description`,`description`,`highlights`,`price_list`,`queue`) VALUES  ('"
                 . $this->title . "', '"
                 . $this->type . "', '"
                 . $this->image_name . "', '"
                 . $this->day . "', '"
+                . $this->start_price . "', '"
                 . $this->short_description . "', '"
                 . $this->description . "', '"
                 . $this->highlights . "', '"
+                . $this->price_list . "', '"
                 . $this->queue . "')";
 
         $db = new Database();
@@ -92,9 +98,11 @@ class TourPackage {
                 . "`type` ='" . $this->type . "', "
                 . "`image_name` ='" . $this->image_name . "', "
                 . "`day` ='" . $this->day . "', "
+                . "`start_price` ='" . $this->start_price . "', "
                 . "`short_description` ='" . $this->short_description . "', "
                 . "`description` ='" . $this->description . "', "
                 . "`highlights` ='" . $this->highlights . "', "
+                . "`price_list` ='" . $this->price_list . "', "
                 . "`queue` ='" . $this->queue . "' "
                 . "WHERE `id` = '" . $this->id . "'";
 
