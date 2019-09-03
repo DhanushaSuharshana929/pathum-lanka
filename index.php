@@ -7,10 +7,14 @@ if (isset($_GET['id'])) {
 }
 
 $TOUR_PACKAGE = new TourPackage(NULL);
+$TOUR = $TOUR_PACKAGE->selectOneDayTours();
 
 $types = $TOUR_PACKAGE->all();
 $COMMENT = new Comments($id);
 $BOX_SECTION_OBJ = new IndexBoxSection(null);
+
+$OFFER_OBJ = new Offer(NULL);
+$OFFER = $OFFER_OBJ->all();
 ?>
 <!DOCTYPE html> 
 <html lang="en-US">
@@ -175,88 +179,48 @@ $BOX_SECTION_OBJ = new IndexBoxSection(null);
                                 <div class=" text-left">
                                     <h3 class="title-3">Featured Offers</h3>
                                 </div>
+                                <?php
+                                foreach ($OFFER as $key => $offer) {
+                                    if ($key < 2) {
+                                        ?>
+                                        <div class="strip_all_rooms_list wow fadeIn animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+                                            <div class="row">
+                                                <div class="col-lg-3 col-md-3 col-sm-4">
+                                                    <div class="img_list">
+                                                        <a href=""><img src="upload/offer/<?php echo $offer["image_name"]; ?>" alt=""></a>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix visible-xs-block">
+                                                </div>
+                                                <div class="col-lg-7 col-md-7 col-sm-6">
+                                                    <div class="rooms_list_desc">
+                                                        <h3><?php echo $offer["title"]; ?></h3>
+                                                        <?php echo $offer["short_description"]; ?>
 
-                                <div class="strip_all_rooms_list wow fadeIn animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
-                                    <div class="row">
-                                        <div class="col-lg-4 col-md-4 col-sm-4">
-                                            <div class="img_list">
-                                                <a href=""><img src="images/o1.jpg" alt=""></a>
-                                            </div>
-                                        </div>
-                                        <div class="clearfix visible-xs-block">
-                                        </div>
-                                        <div class="col-lg-6 col-md-6 col-sm-6">
-                                            <div id="" class="rooms_list_desc ">
-                                                <h3><strong>Single</strong> room</h3>
-                                                <ul>
-                                                    <li>Free Wifi</li>
-                                                    <li>Sed pretium, ligula soll</li>
-                                                    <li>Sed pretium, ligula sollSed pretium, ligula soll</li>
-                                                    <li>Sed pretium, ligula soll</li>
-                                                    <li>Sed pretium, ligula soll</li>
-                                                    <li>Sed pretium, ligula soll</li>
+                                                        <a href="" class="read-more arrows th-cl">Read More</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-md-2 col-sm-2">
+                                                    <div class="price_list">
+                                                        <div>
 
-                                                </ul>
+                                                            <small>From</small>   <span class="normal_price_list">$<?php echo $offer["price"]; ?></span>
 
-                                                <a href="" class="read-more arrows th-cl">Read More</a>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-2 col-md-2 col-sm-2">
-                                            <div class="price_list">
-                                                <div>
 
-                                                    <small>From</small><span class="normal_price_list">$99</span>
-
-                                                    <p>
-                                                        <a href="view-offers.php" class="btn_1">Book Now</a>
-                                                    </p>
+                                                            <p>
+                                                                <a href="view-offers.php?id=<?php echo $offer["id"]; ?>" class="btn_1">Book Now</a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div><!--End strip -->
-
-                                <div class="strip_all_rooms_list wow fadeIn animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
-                                    <div class="row">
-                                        <div class="col-lg-4 col-md-4 col-sm-4">
-                                            <div class="img_list">
-                                                <a href=""><img src="images/o1.jpg" alt=""></a>
-                                            </div>
-                                        </div>
-                                        <div class="clearfix visible-xs-block">
-                                        </div>
-                                        <div class="col-lg-6 col-md-6 col-sm-6">
-                                            <div class="rooms_list_desc">
-                                                <h3><strong>Double</strong> room</h3>
-                                                <ul>
-                                                    <li>Free Wifi</li>
-                                                    <li>Sed pretium, ligula soll</li>
-                                                    <li>Sed pretium, ligula sollSed pretium, ligula soll</li>
-                                                    <li>Sed pretium, ligula soll</li>
-                                                    <li>Sed pretium, ligula soll</li>
-                                                    <li>Sed pretium, ligula soll</li>
-
-                                                </ul>
-
-                                                <a href="" class="read-more arrows th-cl">Read More</a>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-2 col-md-2 col-sm-2">
-                                            <div class="price_list">
-                                                <div>
-
-                                                    <small>From</small>    <span class="normal_price_list">$99</span>
-
-                                                    <p>
-                                                        <a href="" class="btn_1">Book Now</a>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><!--End strip -->
+                                        </div><!--End strip -->
+                                        <?php
+                                    }
+                                }
+                                ?>
                                 <p>
-                                    <a href="#" class="t-btn df-button th-bg bt">View All Offers</a>
+                                    <a href="news-and-offers.php" class="t-btn df-button th-bg bt">View All Offers</a>
                                 </p>
                             </div><!-- End col-lg-9 -->
 
@@ -264,29 +228,21 @@ $BOX_SECTION_OBJ = new IndexBoxSection(null);
                                 <div class=" text-center">
                                     <h3 class="title-2">Day Tours Offers</h3>
                                 </div>
-                                <div class="img_zoom">
-                                    <a href=""><img src="images/slider/slider-1.jpg" alt="" class="offer_img img-responsive"></a>
-                                    <div class="img_zoom_desc">
-                                        <h3>Single Room <span class="price_home"><span class="from-color">From</span> $90</span></h3>
+                                <?php
+                                foreach ($TOUR as $key => $oneday) {
+                                    if($key < 3){
+                                    ?>
+                                    <div class="img_zoom">
+                                        <a href=""><img src="images/8.jpg" alt="" class="offer_img img-responsive"></a>
+                                        <div class="img_zoom_desc">
+                                            <h3><?php echo $oneday["title"];?> <span class="price_home"><span class="from-color">From</span> $<?php echo $oneday["start_price"];?></span></h3>
 
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="img_zoom">
-                                    <a href=""><img src="images/slider/slider-2.jpg" alt="" class="offer_img img-responsive"></a>
-                                    <div class="img_zoom_desc">
-                                        <h3>Single Room <span class="price_home"><span class="from-color">From</span> $90</span></h3>
-
-
-                                    </div>
-                                </div>
-                                <div class="img_zoom">
-                                    <a href=""><img src="images/slider/slider-3.jpg" alt="" class="offer_img img-responsive"></a>
-                                    <div class="img_zoom_desc">
-                                        <h3>Single Room <span class="price_home"><span class="from-color">From</span> $90</span></h3>
-
-
-                                    </div>
-                                </div>
+                                    <?php
+                                    }
+                                }
+                                ?>
                                 <p>
                                     <a href="" class="t-btn df-button th-bg bt">View All Offers</a>
                                 </p>
@@ -537,11 +493,11 @@ $BOX_SECTION_OBJ = new IndexBoxSection(null);
                         </div>
                     </div>
                 </section>
-                <?php include './contact-slider.php' ?>
+<?php include './contact-slider.php' ?>
 
             </div>
             <!--Footer 1 Start-->
-            <?php include './footer.php' ?>
+<?php include './footer.php' ?>
         </div>
         <!-- jQuery Default Library -->
         <script src="js/jquery.js"></script>

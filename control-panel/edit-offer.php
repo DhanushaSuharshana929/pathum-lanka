@@ -78,6 +78,14 @@ $OFFER = new Offer($id);
                                     <div class="col-md-12">
                                         <div class="form-group form-float">
                                             <div class="form-line">
+                                                <input type="text" id="price2" class="form-control"  value="<?php echo $OFFER->price2; ?>"  name="price2"  required="TRUE">
+                                                <label class="form-label">Price 2</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group form-float">
+                                            <div class="form-line">
                                                 <input type="text" id="discount" class="form-control"  value="<?php echo $OFFER->discount; ?>"  name="discount"  required="TRUE">
                                                 <label class="form-label">Discount</label>
                                             </div>
@@ -95,16 +103,66 @@ $OFFER = new Offer($id);
 
                                     <div class="col-sm-12">
                                         <div class="form-group form-float">
+                                              <label class="form-label">Short Description</label>
                                             <div class="form-line">
-                                                <input type="text" id="short_description" class="form-control" value="<?php echo $OFFER->short_description; ?>"  name="short_description">
-                                                <label class="form-label">Link</label>
+                                                <textarea id="short_description" class="form-control long-text"  row="5"  name="short_description"><?php echo $OFFER->short_description; ?>
+                                                </textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group form-float">
+                                              <label class="form-label">Price List 1</label>
+                                            <div class="form-line">
+                                                <textarea  id="accommodation1" class="form-control long-text"  row="5"  name="accommodation1"><?php echo $OFFER->accommodation1; ?>
+                                                </textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                      <div class="col-sm-12">
+                                        <div class="form-group form-float">
+                                              <label class="form-label">Price List 1- Hotels</label>
+                                            <div class="form-line">
+                                                <textarea id="accommodation_h1" class="form-control long-text"  row="5" name="accommodation_h1"><?php echo $OFFER->accommodation_h1; ?>
+                                                </textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group form-float">
+                                              <label class="form-label">Price List 2</label>
+                                            <div class="form-line">
+                                                <textarea  id="accommodation2" class="form-control long-text"  row="5" name="accommodation2"><?php echo $OFFER->accommodation2; ?>
+                                                </textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  
+                                    <div class="col-sm-12">
+                                        <div class="form-group form-float">
+                                              <label class="form-label">Price List 2- Hotels</label>
+                                            <div class="form-line">
+                                                <textarea id="accommodation_h2" class="form-control long-text"  row="5"  name="accommodation_h2"><?php echo $OFFER->accommodation_h2; ?>
+                                                </textarea>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        <label for="description">Description</label>
+                                        <label for="description">What to Expect</label>
                                         <div class="form-line">
-                                            <textarea id="description" name="description" class="form-control" rows="5"><?php echo $OFFER->description; ?></textarea> 
+                                            <textarea id="description" name="description" class="form-control long-text" rows="5"><?php echo $OFFER->description; ?></textarea> 
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <label for="description">Include</label>
+                                        <div class="form-line">
+                                            <textarea id="include" name="include" class="form-control long-text" rows="5"><?php echo $OFFER->include; ?></textarea> 
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <label for="description">Not Include</label>
+                                        <div class="form-line">
+                                            <textarea id="notinclude" name="notinclude" class="form-control long-text" rows="5"><?php echo $OFFER->notinclude; ?></textarea> 
                                         </div>
                                     </div>
                                     <div class="col-md-12">
@@ -137,7 +195,7 @@ $OFFER = new Offer($id);
         <script src="tinymce/js/tinymce/tinymce.min.js"></script>
         <script>
             tinymce.init({
-                selector: "#description",
+                selector: ".long-text",
                 // ===========================================
                 // INCLUDE THE PLUGIN
                 // ===========================================

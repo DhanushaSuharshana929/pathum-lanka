@@ -20,12 +20,19 @@ class Offer {
     public $description;
     public $price;
     public $discount;
+    public $price2;
+    public $accommodation1;
+    public $accommodation2;
+    public $accommodation_h1;
+    public $accommodation_h2;
+    public $include;
+    public $notinclude;
     public $queue;
 
     public function __construct($id) {
         if ($id) {
 
-            $query = "SELECT `id`,`title`,`image_name`,`short_description`,`description`,`price`,`discount`,`queue` FROM `offer` WHERE `id`=" . $id;
+            $query = "SELECT `id`,`title`,`image_name`,`short_description`,`description`,`price`,`price2`,`discount`,`accommodation1`,`accommodation2`,`accommodation_h1`,`accommodation_h2`,`include`,`notinclude`,`queue` FROM `offer` WHERE `id`=" . $id;
 
             $db = new Database();
 
@@ -37,7 +44,14 @@ class Offer {
             $this->short_description = $result['short_description'];
             $this->description = $result['description'];
             $this->price = $result['price'];
+            $this->price2 = $result['price2'];
             $this->discount = $result['discount'];
+            $this->accommodation1 = $result['accommodation1'];
+            $this->accommodation2 = $result['accommodation2'];
+            $this->accommodation_h1 = $result['accommodation_h1'];
+            $this->accommodation_h2 = $result['accommodation_h2'];
+            $this->include = $result['include'];
+            $this->notinclude = $result['notinclude'];
             $this->queue = $result['queue'];
 
             return $this;
@@ -46,13 +60,20 @@ class Offer {
 
     public function create() {
 
-        $query = "INSERT INTO `offer` (`title`,`image_name`,`short_description`,`description`,`price`,`discount`,`queue`) VALUES  ('"
+        $query = "INSERT INTO `offer` (`title`,`image_name`,`short_description`,`description`,`price`,`price2`,`discount`,`accommodation1`,`accommodation2`,`accommodation_h1`,`accommodation_h2`,`include`,`notinclude`,`queue`) VALUES  ('"
                 . $this->title . "','"
                 . $this->image_name . "', '"
                 . $this->short_description . "', '"
                 . $this->description . "', '"
                 . $this->price . "', '"
+                . $this->price2 . "', '"
                 . $this->discount . "', '"
+                . $this->accommodation1 . "', '"
+                . $this->accommodation2 . "', '"
+                . $this->accommodation_h1 . "', '"
+                . $this->accommodation_h2 . "', '"
+                . $this->include . "', '"
+                . $this->notinclude . "', '"
                 . $this->queue . "')";
 
         $db = new Database();
@@ -90,7 +111,16 @@ class Offer {
                 . "`short_description` ='" . $this->short_description . "', "
                 . "`description` ='" . $this->description . "', "
                 . "`price` ='" . $this->price . "', "
+                . "`price2` ='" . $this->price2 . "', "
                 . "`discount` ='" . $this->discount . "', "
+                . "`accommodation1` ='" . $this->accommodation1 . "', "
+                . "`accommodation2` ='" . $this->accommodation2 . "', "
+                . "`accommodation_h1` ='" . $this->accommodation_h1 . "', "
+                . "`accommodation_h2` ='" . $this->accommodation_h2 . "', "
+                . "`accommodation_h2` ='" . $this->accommodation_h2 . "', "
+                . "`accommodation_h2` ='" . $this->accommodation_h2 . "', "
+                . "`include` ='" . $this->include . "', "
+                . "`notinclude` ='" . $this->notinclude . "', "
                 . "`queue` ='" . $this->queue . "' "
                 . "WHERE `id` = '" . $this->id . "'";
 
