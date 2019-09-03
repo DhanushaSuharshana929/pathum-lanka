@@ -37,6 +37,7 @@ $OFFER = $OFFER_OBJ->all();
         <link href="css/typography.css" rel="stylesheet">
         <!-- Style Css -->
         <link href="css/color.css" rel="stylesheet">
+        <link href="css/offer.css" rel="stylesheet" type="text/css"/>
         <!-- Style Css -->
         <link href="style.css" rel="stylesheet">
         <!-- Responsive Css -->
@@ -68,69 +69,101 @@ $OFFER = $OFFER_OBJ->all();
             <div class="main-contant">
 
 
-
-                <section class="rooms-area section-padding-100-0">
-
+                <section class="about-wrap section-padding-100-0" >
                     <div class="container">
                         <div class="tour-description">
                             <h3 class="text-center">Special Offers </h3>
                             <p class="text-center"> We are gifted to make specail tour offers to our clients because maximum value from your holiday budget.We give on these benifits to our clients,so that everyone enjoying a holiday in Sri Lanka.
                             </p>
                         </div>
-
-                        <div class="row justify-content-center">
-
-                            <?php
-                            foreach ($OFFER as $key => $offer) {
-                                ?>
-                                <div class="col-12 col-md-4 col-lg-4">
-
-                                    <a href="tour-packages-view.php?id=<?php echo $offer["short_description"] ?>&&offer=<?php echo $offer['id'] ?>">
-
-
-                                        <div class="single-rooms-area wow fadeInUp" data-wow-delay="100ms">
-
-                                            <!-- Thumbnail -->
-
-                                            <div class="bg-thumbnail bg-img bg-offer" style="background-image: url(upload/offer/<?php echo $offer["image_name"]; ?>);"></div>
-
-                                            <img src="images/icons/off-offer.png" class="offer-img" alt=""/>
-
-                                            <!-- Price -->
-                                            <!-- Rooms Text -->
-    <!--                                            <img src="images/icons/offer-2.png" class="dicount-img"  alt=""/>-->
-                                            <h5 class="discount">
-                                                <?php echo $offer["discount"]; ?>%
-                                            </h5>
-                                            <h6 class="off-title">Off</h6>
-
-                                            <div class="rooms-text">
-
-                                                <div class="line"></div>
-
-                                                <h4><?php echo $offer["title"]; ?></h4>
-                                                <?php echo $offer["day"]; ?>
-
-
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="strip_all_rooms_list wow fadeIn animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-3 col-sm-4">
+                                            <div class="img_list">
+                                                <a href=""><img src="images/o1.jpg" alt=""></a>
                                             </div>
-
-                                            <!-- Book Room -->
-
-                                            <button  class="book-room-btn btn palatin-btn">View More</button>
-
                                         </div>
+                                        <div class="clearfix visible-xs-block">
+                                        </div>
+                                        <div class="col-lg-7 col-md-7 col-sm-6">
+                                            <div class="rooms_list_desc">
+                                                <h3><strong>Single</strong> room</h3>
+                                                <ul>
+                                                    <li>Free Wifi</li>
+                                                    <li>Sed pretium, ligula soll</li>
+                                                    <li>Sed pretium, ligula sollSed pretium, ligula soll</li>
+                                                    <li>Sed pretium, ligula soll</li>
+                                                    <li>Sed pretium, ligula soll</li>
+                                                    <li>Sed pretium, ligula soll</li>
+                                             
+                                                </ul>
 
-                                    </a>
+                                                <a href="" class="read-more arrows th-cl">Read More</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-2">
+                                            <div class="price_list">
+                                                <div>
 
-                                </div>
-                                <?php
-                            }
-                            ?>
+                                                 <small>From</small>   <span class="normal_price_list">$99</span>
+
+
+                                                    <p>
+                                                        <a href="view-offers.php" class="btn_1">Book Now</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--End strip -->
+
+                                <div class="strip_all_rooms_list wow fadeIn animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-3 col-sm-4">
+                                            <div class="img_list">
+                                                <a href=""><img src="images/o1.jpg" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix visible-xs-block">
+                                        </div>
+                                        <div class="col-lg-7 col-md-7 col-sm-6">
+                                            <div class="rooms_list_desc">
+                                                <h3><strong>Double</strong> room</h3>
+                                                <ul>
+                                                    <li>Free Wifi</li>
+                                                    <li>Sed pretium, ligula soll</li>
+                                                    <li>Sed pretium, ligula sollSed pretium, ligula soll</li>
+                                                    <li>Sed pretium, ligula soll</li>
+                                                    <li>Sed pretium, ligula soll</li>
+                                                    <li>Sed pretium, ligula soll</li>
+                                               
+                                                   
+
+                                                </ul>
+
+                                                <a href="" class="read-more arrows th-cl">Read More</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-2">
+                                            <div class="price_list">
+                                                <div>
+                                                    <small>From</small><span class="normal_price_list">$99</span>
+
+                                                    <p>
+                                                        <a href="view-offers.php" class="btn_1">Book Now</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--End strip -->
+
+                            </div><!-- End col-lg-9 -->
 
                         </div>
-
                     </div>
-
                 </section>
                 <?php include './contact-slider.php' ?>
 

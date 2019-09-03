@@ -44,6 +44,7 @@ $BOX_SECTION_OBJ = new IndexBoxSection(null);
         <!-- Style Css -->
         <link href="css/color.css" rel="stylesheet">
         <!-- Style Css -->
+        <link href="css/offer.css" rel="stylesheet" type="text/css"/>
         <link href="style.css" rel="stylesheet">
         <!-- Responsive Css -->
         <link href="thepalatin_style.css" rel="stylesheet" type="text/css"/>
@@ -166,6 +167,133 @@ $BOX_SECTION_OBJ = new IndexBoxSection(null);
                         <!--Masonry Grid End-->
                     </div>
                 </section >
+                <section class="about-wrap1" >
+                    <div class="container">
+
+                        <div class="row">
+                            <div class="col-lg-9 col-md-8">
+                                <div class=" text-left">
+                                    <h3 class="title-3">Featured Offers</h3>
+                                </div>
+
+                                <div class="strip_all_rooms_list wow fadeIn animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <div class="img_list">
+                                                <a href=""><img src="images/o1.jpg" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix visible-xs-block">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                            <div id="" class="rooms_list_desc ">
+                                                <h3><strong>Single</strong> room</h3>
+                                                <ul>
+                                                    <li>Free Wifi</li>
+                                                    <li>Sed pretium, ligula soll</li>
+                                                    <li>Sed pretium, ligula sollSed pretium, ligula soll</li>
+                                                    <li>Sed pretium, ligula soll</li>
+                                                    <li>Sed pretium, ligula soll</li>
+                                                    <li>Sed pretium, ligula soll</li>
+
+                                                </ul>
+
+                                                <a href="" class="read-more arrows th-cl">Read More</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-2">
+                                            <div class="price_list">
+                                                <div>
+
+                                                    <small>From</small><span class="normal_price_list">$99</span>
+
+                                                    <p>
+                                                        <a href="view-offers.php" class="btn_1">Book Now</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--End strip -->
+
+                                <div class="strip_all_rooms_list wow fadeIn animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <div class="img_list">
+                                                <a href=""><img src="images/o1.jpg" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix visible-xs-block">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                            <div class="rooms_list_desc">
+                                                <h3><strong>Double</strong> room</h3>
+                                                <ul>
+                                                    <li>Free Wifi</li>
+                                                    <li>Sed pretium, ligula soll</li>
+                                                    <li>Sed pretium, ligula sollSed pretium, ligula soll</li>
+                                                    <li>Sed pretium, ligula soll</li>
+                                                    <li>Sed pretium, ligula soll</li>
+                                                    <li>Sed pretium, ligula soll</li>
+
+                                                </ul>
+
+                                                <a href="" class="read-more arrows th-cl">Read More</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-2">
+                                            <div class="price_list">
+                                                <div>
+
+                                                    <small>From</small>    <span class="normal_price_list">$99</span>
+
+                                                    <p>
+                                                        <a href="" class="btn_1">Book Now</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--End strip -->
+                                <p>
+                                    <a href="#" class="t-btn df-button th-bg bt">View All Offers</a>
+                                </p>
+                            </div><!-- End col-lg-9 -->
+
+                            <div class="col-lg-3 col-md-4">
+                                <div class=" text-center">
+                                    <h3 class="title-2">Day Tours Offers</h3>
+                                </div>
+                                <div class="img_zoom">
+                                    <a href=""><img src="images/slider/slider-1.jpg" alt="" class="offer_img img-responsive"></a>
+                                    <div class="img_zoom_desc">
+                                        <h3>Single Room <span class="price_home"><span class="from-color">From</span> $90</span></h3>
+
+                                    </div>
+                                </div>
+                                <div class="img_zoom">
+                                    <a href=""><img src="images/slider/slider-2.jpg" alt="" class="offer_img img-responsive"></a>
+                                    <div class="img_zoom_desc">
+                                        <h3>Single Room <span class="price_home"><span class="from-color">From</span> $90</span></h3>
+
+
+                                    </div>
+                                </div>
+                                <div class="img_zoom">
+                                    <a href=""><img src="images/slider/slider-3.jpg" alt="" class="offer_img img-responsive"></a>
+                                    <div class="img_zoom_desc">
+                                        <h3>Single Room <span class="price_home"><span class="from-color">From</span> $90</span></h3>
+
+
+                                    </div>
+                                </div>
+                                <p>
+                                    <a href="" class="t-btn df-button th-bg bt">View All Offers</a>
+                                </p>
+                            </div><!-- End col-lg-3 -->
+                        </div>
+                    </div>
+                </section>
                 <section class="about-wrap" style="padding:0px;">
                     <div class="container">
                         <!--Section Heading Start-->
@@ -214,7 +342,7 @@ $BOX_SECTION_OBJ = new IndexBoxSection(null);
                                         break;
                                     }
                                     ?>
-                                
+
                                     <div class="col-12 col-md-4 col-lg-4">
                                         <a href="tour-packages-view.php?id=<?php echo $tour_package["id"]; ?>">
                                             <div class="col-md-3">
