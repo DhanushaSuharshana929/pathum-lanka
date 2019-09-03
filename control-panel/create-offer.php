@@ -67,6 +67,14 @@ include_once(dirname(__FILE__) . '/auth.php');
                                     <div class="col-md-12">
                                         <div class="form-group form-float">
                                             <div class="form-line">
+                                                <input type="text" id="price2" class="form-control" autocomplete="off" name="price2" required="true">
+                                                <label class="form-label">Price 2</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group form-float">
+                                            <div class="form-line">
                                                 <input type="text" id="discount" class="form-control" autocomplete="off" name="discount" required="true">
                                                 <label class="form-label">Discount</label>
                                             </div>
@@ -82,17 +90,61 @@ include_once(dirname(__FILE__) . '/auth.php');
 
                                     <div class="col-md-12">
                                         <div class="form-group form-float">
+                                                 <label class="form-label">Short Description</label>
                                             <div class="form-line">
-                                                <input type="text" id="short_description" class="form-control" autocomplete="off" name="short_description" required="true">
-                                                <label class="form-label">Link</label>
+                                                <textarea  id="short_description" class="form-control long-text"  name="short_description" row="5"></textarea>
+                                           
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        <label for="description">Description</label>
+                                        <label for="description">Price List 1</label>
                                         <div class="form-line">
-                                            <textarea id="description" name="description" class="form-control" rows="5"></textarea> 
+                                            <textarea id="accommodation1" name="accommodation1" class="form-control long-text" rows="5"></textarea> 
+                                        </div>
+
+                                    </div>
+                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <label for="description">Price List 1- Hotels</label>
+                                        <div class="form-line">
+                                            <textarea id="accommodation_h1" name="accommodation_h1" class="form-control long-text" rows="5"></textarea> 
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <label for="description">Price List 2</label>
+                                        <div class="form-line">
+                                            <textarea id="accommodation2" name="accommodation2" class="form-control long-text" rows="5"></textarea> 
+                                        </div>
+
+                                    </div>
+                               
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <label for="description">Price List 2- Hotels</label>
+                                        <div class="form-line">
+                                            <textarea id="accommodation_h2" name="accommodation_h2" class="form-control long-text" rows="5"></textarea> 
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <label for="description">What to Expect</label>
+                                        <div class="form-line">
+                                            <textarea id="description" name="description" class="form-control long-text" rows="5"></textarea> 
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <label for="description">Include</label>
+                                        <div class="form-line">
+                                            <textarea id="include" name="include" class="form-control long-text" rows="5"></textarea> 
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <label for="description">Not Include</label>
+                                        <div class="form-line">
+                                            <textarea id="notinclude" name="notinclude" class="form-control long-text" rows="5"></textarea> 
                                         </div>
 
                                     </div>
@@ -120,13 +172,12 @@ include_once(dirname(__FILE__) . '/auth.php');
         <script src="plugins/node-waves/waves.js"></script>
         <script src="js/admin.js"></script>
         <script src="js/demo.js"></script>
-        <script src="js/add-new-ad.js" type="text/javascript"></script>
 
 
         <script src="tinymce/js/tinymce/tinymce.min.js"></script>
         <script>
             tinymce.init({
-                selector: "#description",
+                selector: ".long-text",
                 // ===========================================
                 // INCLUDE THE PLUGIN
                 // ===========================================
