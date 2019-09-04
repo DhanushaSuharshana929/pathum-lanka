@@ -3,7 +3,6 @@ include_once(dirname(__FILE__) . '/class/include.php');
 $OFFER_OBJ = new Offer(NULL);
 $OFFER = $OFFER_OBJ->all();
 $PACKAGE_BANNER = new Banner(5);
-
 ?>
 <!DOCTYPE html>
 
@@ -78,45 +77,45 @@ $PACKAGE_BANNER = new Banner(5);
                         </div>
                         <div class="row">
                             <div class="col-lg-12 col-md-12">
-                                <?php 
-                                foreach ($OFFER as $key => $offer){
-                                ?>
-                                <div class="strip_all_rooms_list wow fadeIn animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
-                                    <div class="row">
-                                        <div class="col-lg-3 col-md-3 col-sm-4">
-                                            <div class="img_list">
-                                                <a href=""><img src="upload/offer/<?php echo $offer["image_name"];?>" alt=""></a>
+                                <?php
+                                foreach ($OFFER as $key => $offer) {
+                                    ?>
+                                    <div class="strip_all_rooms_list wow fadeIn animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
+                                        <div class="row">
+                                            <div class="col-lg-3 col-md-3 col-sm-4">
+                                                <div class="img_list">
+                                                    <a href=""><img src="upload/offer/<?php echo $offer["image_name"]; ?>" alt=""></a>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="clearfix visible-xs-block">
-                                        </div>
-                                        <div class="col-lg-7 col-md-7 col-sm-6">
-                                            <div class="rooms_list_desc">
-                                                <h3><?php echo $offer["title"];?></h3>
-                                              <?php echo $offer["short_description"];?>
-
-                                                <a href="" class="read-more arrows th-cl">Read More</a>
+                                            <div class="clearfix visible-xs-block">
                                             </div>
-                                        </div>
-                                        <div class="col-lg-2 col-md-2 col-sm-2">
-                                            <div class="price_list">
-                                                <div>
+                                            <div class="col-lg-7 col-md-7 col-sm-6">
+                                                <div class="rooms_list_desc">
+                                                    <h3><?php echo $offer["title"]; ?></h3>
+                                                    <?php echo $offer["short_description"]; ?>
 
-                                                 <small>From</small>   <span class="normal_price_list">$<?php echo $offer["price"];?></span>
+                                                    <a href="" class="read-more arrows th-cl">Read More</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-2">
+                                                <div class="price_list">
+                                                    <div>
+
+                                                        <small>From</small>   <span class="normal_price_list">$<?php echo $offer["price"]; ?></span>
 
 
-                                                    <p>
-                                                        <a href="view-offers.php?id=<?php echo $offer["id"];?>" class="btn_1">Book Now</a>
-                                                    </p>
+                                                        <p>
+                                                            <a href="view-offers.php?id=<?php echo $offer["id"]; ?>" class="btn_1">Book Now</a>
+                                                        </p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div><!--End strip -->
-      <?php 
+                                    </div><!--End strip -->
+                                    <?php
                                 }
                                 ?>
-               
+
 
                             </div><!-- End col-lg-9 -->
 

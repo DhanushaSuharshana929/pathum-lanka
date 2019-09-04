@@ -177,7 +177,7 @@ $OFFER = $OFFER_OBJ->all();
                         <div class="row">
                             <div class="col-lg-9 col-md-8">
                                 <div class=" text-left">
-                                    <h3 class="title-3">Featured Offers</h3>
+                                    <h3 class="title-3">Featured Offers (October to March)</h3>
                                 </div>
                                 <?php
                                 foreach ($OFFER as $key => $offer) {
@@ -185,19 +185,19 @@ $OFFER = $OFFER_OBJ->all();
                                         ?>
                                         <div class="strip_all_rooms_list wow fadeIn animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
                                             <div class="row">
-                                                <div class="col-lg-3 col-md-3 col-sm-4">
+                                                <div class="col-lg-4 col-md-4 col-sm-4">
                                                     <div class="img_list">
                                                         <a href=""><img src="upload/offer/<?php echo $offer["image_name"]; ?>" alt=""></a>
                                                     </div>
                                                 </div>
                                                 <div class="clearfix visible-xs-block">
                                                 </div>
-                                                <div class="col-lg-7 col-md-7 col-sm-6">
+                                                <div class="col-lg-6 col-md-6 col-sm-6">
                                                     <div class="rooms_list_desc">
                                                         <h3><?php echo $offer["title"]; ?></h3>
                                                         <?php echo $offer["short_description"]; ?>
 
-                                                        <a href="" class="read-more arrows th-cl">Read More</a>
+                                                        <a href="view-offers.php?id=<?php echo $offer["id"]; ?>" class="read-more arrows th-cl">Read More</a>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-2 col-md-2 col-sm-2">
@@ -244,7 +244,7 @@ $OFFER = $OFFER_OBJ->all();
                                 }
                                 ?>
                                 <p>
-                                    <a href="" class="t-btn df-button th-bg bt">View All Offers</a>
+                                    <a href="https://pathumlankatours.com/tour-packages.php?type=1" class="t-btn df-button th-bg bt">View All Offers</a>
                                 </p>
                             </div><!-- End col-lg-3 -->
                         </div>
@@ -292,7 +292,7 @@ $OFFER = $OFFER_OBJ->all();
                             <div class="tour-package-slider box-arrow">
                                 <!-- Single Rooms Area -->
                                 <?php
-                                $TOUR_PACKAGE = TourPackage::all();
+                                $TOUR_PACKAGE = TourPackage::selectRoundTours();
                                 foreach ($TOUR_PACKAGE as $key => $tour_package) {
                                     if ($key == 8) {
                                         break;
@@ -301,11 +301,7 @@ $OFFER = $OFFER_OBJ->all();
 
                                     <div class="col-12 col-md-4 col-lg-4">
                                         <a href="tour-packages-view.php?id=<?php echo $tour_package["id"]; ?>">
-                                            <div class="col-md-3">
-                                                <div  class="">
-                                                    <div class="ribbon red">FROM <strong class="rbn-price">$<?php echo $tour_package['start_price']; ?></strong>/Person</div>
-                                                </div>
-                                            </div>
+                                           
                                             <div class="single-rooms-area wow fadeInUp" data-wow-delay="100ms">
                                                 <!-- Thumbnail -->
                                                 <div class="bg-thumbnail bg-img" style="background-image: url(upload/tour-package/<?php echo $tour_package["image_name"]; ?>);"></div>
