@@ -17,6 +17,7 @@ class TourPackage {
     public $title;
     public $type;
     public $image_name;
+    public $image2;
     public $day;
     public $start_price;
     public $short_description;
@@ -28,7 +29,7 @@ class TourPackage {
     public function __construct($id) {
         if ($id) {
 
-            $query = "SELECT `id`,`type`,`title`,`image_name`,`day`,`start_price`,`short_description`,`description`,`highlights`,`price_list`,`queue` FROM `tour_package` WHERE `id`=" . $id;
+            $query = "SELECT `id`,`type`,`title`,`image_name`,`image2`,`day`,`start_price`,`short_description`,`description`,`highlights`,`price_list`,`queue` FROM `tour_package` WHERE `id`=" . $id;
 
             $db = new Database();
 
@@ -38,6 +39,7 @@ class TourPackage {
             $this->type = $result['type'];
             $this->title = $result['title'];
             $this->image_name = $result['image_name'];
+            $this->image2 = $result['image2'];
             $this->day = $result['day'];
             $this->start_price = $result['start_price'];
             $this->short_description = $result['short_description'];
@@ -52,10 +54,11 @@ class TourPackage {
 
     public function create() {
 
-        $query = "INSERT INTO `tour_package` (`title`,`type`,`image_name`,`day`,`start_price`,`short_description`,`description`,`highlights`,`price_list`,`queue`) VALUES  ('"
+        $query = "INSERT INTO `tour_package` (`title`,`type`,`image_name`,`image2`,`day`,`start_price`,`short_description`,`description`,`highlights`,`price_list`,`queue`) VALUES  ('"
                 . $this->title . "', '"
                 . $this->type . "', '"
                 . $this->image_name . "', '"
+                . $this->image2 . "', '"
                 . $this->day . "', '"
                 . $this->start_price . "', '"
                 . $this->short_description . "', '"
@@ -97,6 +100,7 @@ class TourPackage {
                 . "`title` ='" . $this->title . "', "
                 . "`type` ='" . $this->type . "', "
                 . "`image_name` ='" . $this->image_name . "', "
+                . "`image2` ='" . $this->image2. "', "
                 . "`day` ='" . $this->day . "', "
                 . "`start_price` ='" . $this->start_price . "', "
                 . "`short_description` ='" . $this->short_description . "', "

@@ -92,6 +92,13 @@ include_once(dirname(__FILE__) . '/auth.php');
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col-md-12">                                       
+                                        <div class="form-group form-float">
+                                            <div class="form-line">
+                                                <input type="file" id="image2" class="form-control" name="image2"  required="true">
+                                            </div>
+                                        </div>
+                                    </div>
 
                                     <div class="col-md-12">
                                         <div class="form-group form-float">

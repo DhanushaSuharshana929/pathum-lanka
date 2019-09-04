@@ -118,6 +118,14 @@ $TOUR_PACKAGE = new TourPackage($id);
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col-md-12">                                       
+                                        <div class="form-group form-float">
+                                            <div class="form-line">
+                                                <input type="file" id="image2" class="form-control" value="<?php echo $TOUR_PACKAGE->image2; ?>"  name="image2">
+                                                <img src="../upload/tour-package/2/<?php echo $TOUR_PACKAGE->image2; ?>" id="image2" class="view-edit-img img img-responsive img-thumbnail" name="image" alt="old image">
+                                            </div>
+                                        </div>
+                                    </div>
 
 
                                     <div class="col-sm-12">
