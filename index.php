@@ -233,7 +233,7 @@ $OFFER = $OFFER_OBJ->all();
                                     if($key < 3){
                                     ?>
                                     <div class="img_zoom">
-                                        <a href=""><img src="images/8.jpg" alt="" class="offer_img img-responsive"></a>
+                                        <a href="tour-packages-view.php?id=<?php echo $oneday["id"];?>"><img src="./upload/tour-package/2/<?php echo $oneday["image2"];?>" alt="" class="offer_img img-responsive"></a>
                                         <div class="img_zoom_desc">
                                             <h3><?php echo $oneday["title"];?> <span class="price_home"><span class="from-color">From</span> $<?php echo $oneday["start_price"];?></span></h3>
 

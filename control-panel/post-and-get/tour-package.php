@@ -17,6 +17,7 @@ if (isset($_POST['create'])) {
     $TOUR_PACKAGE->price_list = $_POST['price_list'];
 
     $dir_dest = '../../upload/tour-package/';
+  
 
     $handle = new Upload($_FILES['image']);
 
@@ -36,6 +37,32 @@ if (isset($_POST['create'])) {
             $info = getimagesize($handle->file_dst_pathname);
             $imgName = $handle->file_dst_name;
         }
+        
+       
+    }
+    $dir_dest2 = '../../upload/tour-package/2/';
+  
+
+    $handle2 = new Upload($_FILES['image2']);
+
+    $imgName2 = null;
+
+    if ($handle2->uploaded) {
+        $handle2->image_resize = true;
+        $handle2->file_new_name_ext = 'jpg';
+        $handle2->image_ratio_crop = 'C';
+        $handle2->file_new_name_body = Helper::randamId();
+        $handle2->image_x = 223;
+        $handle2->image_y = 105;
+
+        $handle->Process($dir_dest2);
+
+        if ($handle2->processed) {
+            $info2 = getimagesize($handle2->file_dst_pathname);
+            $imgName2 = $handle2->file_dst_name;
+        }
+        
+       
     }
 
     $TOUR_PACKAGE->image_name = $imgName;
@@ -83,6 +110,7 @@ if (isset($_POST['create'])) {
 
 if (isset($_POST['update'])) {
     $dir_dest = '../../upload/tour-package/';
+  
 
     $handle = new Upload($_FILES['image']);
 
@@ -104,13 +132,45 @@ if (isset($_POST['update'])) {
             $info = getimagesize($handle->file_dst_pathname);
             $imgName = $handle->file_dst_name;
         }
+     
     }
+    
+     $dir_dest2 = '../../upload/tour-package/2/';
+  
+
+    $handle2 = new Upload($_FILES['image2']);
+
+    $imgName2 = null;
+
+    if ($handle2->uploaded) {
+        $handle2->image_resize = true;
+        $handle2->file_new_name_body = TRUE;
+        $handle2->file_overwrite = TRUE;
+        $handle2->file_new_name_ext = FALSE;
+        $handle2->image_ratio_crop = 'C';
+        $handle2->file_new_name_body = $_POST ["oldImageName"];
+        $handle2->image_x = 223;
+        $handle2->image_y = 105;
+
+        $handle2->Process($dir_dest2);
+
+        if ($handle2->processed) {
+            $info2 = getimagesize($handle2->file_dst_pathname);
+            $imgName2 = $handle2->file_dst_name;
+        }
+     
+    }
+    
+    
+    
+    
+    
 
     $TOUR_PACKAGE = new TourPackage($_POST['id']);
 
     $TOUR_PACKAGE->image_name = $_POST['oldImageName'];
-    $TOUR_PACKAGE->type =$_POST['type'];
-    $TOUR_PACKAGE->title =$_POST['title'];
+    $TOUR_PACKAGE->type = $_POST['type'];
+    $TOUR_PACKAGE->title = $_POST['title'];
     $TOUR_PACKAGE->day = $_POST['day'];
     $TOUR_PACKAGE->start_price = $_POST['start_price'];
     $TOUR_PACKAGE->short_description = $_POST['short_description'];
@@ -160,9 +220,9 @@ if (isset($_POST['save-data'])) {
 
     foreach ($_POST['sort'] as $key => $img) {
         $key = $key + 1;
-        
+
         $TOUR_PACKAGE = TourPackage::arrange($key, $img);
-        
+
         header('Location: ' . $_SERVER['HTTP_REFERER']);
     }
 }
