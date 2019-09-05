@@ -94,7 +94,7 @@ $PACKAGE_BANNER = new Banner(5);
                                                     <h3><?php echo $offer["title"]; ?></h3>
                                                     <?php echo $offer["short_description"]; ?>
 
-                                                    <a href="" class="read-more arrows th-cl">Read More</a>
+                                                    <a href="view-offers.php?id=<?php echo $offer["id"]; ?>" class="read-more arrows th-cl">Read More</a>
                                                 </div>
                                             </div>
                                             <div class="col-lg-2 col-md-2 col-sm-2">

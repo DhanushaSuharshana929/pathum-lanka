@@ -230,16 +230,16 @@ $OFFER = $OFFER_OBJ->all();
                                 </div>
                                 <?php
                                 foreach ($TOUR as $key => $oneday) {
-                                    if($key < 3){
-                                    ?>
-                                    <div class="img_zoom">
-                                        <a href="tour-packages-view.php?id=<?php echo $oneday["id"];?>"><img src="./upload/tour-package/2/<?php echo $oneday["image2"];?>" alt="" class="offer_img img-responsive"></a>
-                                        <div class="img_zoom_desc">
-                                            <h3><?php echo $oneday["title"];?> <span class="price_home"><span class="from-color">From</span> $<?php echo $oneday["start_price"];?></span></h3>
+                                    if ($key < 3) {
+                                        ?>
+                                        <div class="img_zoom">
+                                            <a href="tour-packages-view.php?id=<?php echo $oneday["id"]; ?>"><img src="./upload/tour-package/2/<?php echo $oneday["image2"]; ?>" alt="" class="offer_img img-responsive"></a>
+                                            <div class="img_zoom_desc">
+                                                <h3><?php echo $oneday["title"]; ?> <span class="price_home"><span class="from-color">From</span> $<?php echo $oneday["start_price"]; ?></span></h3>
 
+                                            </div>
                                         </div>
-                                    </div>
-                                    <?php
+                                        <?php
                                     }
                                 }
                                 ?>
@@ -294,14 +294,14 @@ $OFFER = $OFFER_OBJ->all();
                                 <?php
                                 $TOUR_PACKAGE = TourPackage::selectRoundTours();
                                 foreach ($TOUR_PACKAGE as $key => $tour_package) {
-                                    if ($key == 8) {
+                                    if ($key == 5) {
                                         break;
                                     }
                                     ?>
 
                                     <div class="col-12 col-md-4 col-lg-4">
                                         <a href="tour-packages-view.php?id=<?php echo $tour_package["id"]; ?>">
-                                           
+
                                             <div class="single-rooms-area wow fadeInUp" data-wow-delay="100ms">
                                                 <!-- Thumbnail -->
                                                 <div class="bg-thumbnail bg-img" style="background-image: url(upload/tour-package/<?php echo $tour_package["image_name"]; ?>);"></div>
@@ -396,7 +396,7 @@ $OFFER = $OFFER_OBJ->all();
                         <!--Section Heading End-->
                         <div class="row">
                             <div class="col-md-4 col-sm-12 " id="feedback">
-                                <div class="testimonial-slider-2 row box-arrow">
+                                <div class="testimonial-slider-2  box-arrow">
                                     <?php
                                     $COMMENTS = Comments::activeComments($id);
                                     foreach ($COMMENTS as $key => $comments) {
@@ -409,7 +409,11 @@ $OFFER = $OFFER_OBJ->all();
                                             </div>
                                             <div class="media-body">
                                                 <div class="testimonial-tripad"><img src="images/tripadvisor_stars.png"></div>
-                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient.</p>
+
+                                                <div class="dummy">
+                                                    <p> <?php echo $comments["comment"]; ?> </p>
+                                                </div>
+    <!--                                                <span class="testimonial-2-read-more">Read More</span>-->
                                                 <div style="float: right;"><img src="images/tripadvisor_outline.png"></div>
                                                 <div style="margin-top: 20px;"><h6 class=""><?php echo $comments["name"]; ?></h6></div>
                                             </div>
@@ -428,7 +432,8 @@ $OFFER = $OFFER_OBJ->all();
                                 <div id="TA_selfserveprop837" class="TA_selfserveprop"><ul id="KEWHRuWIMV" class="TA_links JexZnt"><li id="jgAYPb" class="l6iiPyjaMW"><a target="_blank" href="https://www.tripadvisor.com/"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/150_logo-11900-2.png" alt="TripAdvisor"/></a></li></ul></div><script async src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=837&amp;locationId=12948667&amp;lang=en_US&amp;rating=true&amp;nreviews=0&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=false&amp;border=true&amp;display_version=2" data-loadtrk onload="this.loadtrk = true"></script>
 
                             </div>
-                        </div>    
+                        </div> 
+                    </div>
                 </section>
                 <section class=" plan-your-trip-banner">
                     <div class="plan-your-trip-parallex container-fluid" >
@@ -460,7 +465,7 @@ $OFFER = $OFFER_OBJ->all();
                                 <?php
                                 $ATTRACTION = Attraction::all();
                                 foreach ($ATTRACTION as $key => $attraction) {
-                                    if ($key == 7) {
+                                    if ($key == 5) {
                                         break;
                                     }
                                     ?>
@@ -489,11 +494,11 @@ $OFFER = $OFFER_OBJ->all();
                         </div>
                     </div>
                 </section>
-<?php include './contact-slider.php' ?>
+                <?php include './contact-slider.php' ?>
 
             </div>
             <!--Footer 1 Start-->
-<?php include './footer.php' ?>
+            <?php include './footer.php' ?>
         </div>
         <!-- jQuery Default Library -->
         <script src="js/jquery.js"></script>
@@ -505,24 +510,34 @@ $OFFER = $OFFER_OBJ->all();
         <!-- Popup Library -->
         <script src="js/jquery.magnific-popup.min.js"></script>
         <script src="index-contact-form/scripts.js" type="text/javascript"></script>
+        <script src="js/readMoreJS.min.js" type="text/javascript"></script>
+        <script>
+                                 $readMoreJS.init({
+                                     target: '.dummy p', // Selector of the element the plugin applies to (any CSS selector, eg: '#', '.'). Default: ''
+                                     numOfWords: 20, // Number of words to initially display (any number). Default: 50
+                                     toggle: true, // If true, user can toggle between 'read more' and 'read less'. Default: true
+                                     moreLink: 'Read More', // The text of 'Read more' link. Default: 'read more ...'
+                                     lessLink: 'Read Less'         // The text of 'Read less' link. Default: 'read less'
+                                 });
+        </script>
         <script>
 
-                                    $(document).ready(function () {
+            $(document).ready(function () {
 
-                                        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-                                        window.onscroll = function () {
-                                            scrollFunction()
-                                        };
+                // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+                window.onscroll = function () {
+                    scrollFunction()
+                };
 
-                                        function scrollFunction() {
-                                            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-                                                $("#inner-h").addClass("affix");
+                function scrollFunction() {
+                    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                        $("#inner-h").addClass("affix");
 
-                                            } else {
-                                                $("#inner-h").removeClass("affix");
-                                                $("#inner-h").addClass("affix-top");
-                                            }
-                                        }
+                    } else {
+                        $("#inner-h").removeClass("affix");
+                        $("#inner-h").addClass("affix-top");
+                    }
+                }
 //                $('.dl-menuwrapper ul').on('click', function () {
 //                    $(this).parent().find('.dl-menuwrapper ul').removeClass('dl-menuopen');
 //                    $(this).addClass('dl-menuopen');
@@ -534,31 +549,31 @@ $OFFER = $OFFER_OBJ->all();
 //                    $(this).addClass('active');
 //                });
 
-                                        $('.dl-trigger').on('click', function () {
+                $('.dl-trigger').on('click', function () {
 
-                                            var activity = $(this).attr("action");
+                    var activity = $(this).attr("action");
 
-                                            if (activity === "false") {
-                                                $(this).addClass('dl-active');
-                                                $(this).attr("action", "true");
-                                                $("#mob-nav").addClass("dl-menuopen");
-                                            }
+                    if (activity === "false") {
+                        $(this).addClass('dl-active');
+                        $(this).attr("action", "true");
+                        $("#mob-nav").addClass("dl-menuopen");
+                    }
 
 
-                                            if (activity === "true") {
-                                                $(this).removeClass('dl-active');
-                                                $(this).attr("action", "false");
-                                                $("#mob-nav").removeClass("dl-menuopen");
-                                            }
-                                        });
+                    if (activity === "true") {
+                        $(this).removeClass('dl-active');
+                        $(this).attr("action", "false");
+                        $("#mob-nav").removeClass("dl-menuopen");
+                    }
+                });
 
-                                        $(".service-title").hover(function () {
-                                            $(this).addClass(".service-title");
-                                        }, function () {
-                                            $(this).removeClass(".service-title");
-                                        });
+                $(".service-title").hover(function () {
+                    $(this).addClass(".service-title");
+                }, function () {
+                    $(this).removeClass(".service-title");
+                });
 
-                                    });
+            });
 
 
         </script>
@@ -573,23 +588,23 @@ $OFFER = $OFFER_OBJ->all();
         <script src="slick-slider/slick-custom.js" type="text/javascript"></script>
 
         <script type="text/javascript">
-                                    function googleTranslateElementInit() {
-                                        new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
-                                    }
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+            }
         </script>        
         <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
 
         <script type="text/javascript">
-                                    $('.translation-links a').click(function () {
-                                        var lang = $(this).data('lang');
-                                        var $frame = $('.goog-te-menu-frame:first');
-                                        if (!$frame.size()) {
-                                            alert("Error: Could not find Google translate frame.");
-                                            return false;
-                                        }
-                                        $frame.contents().find('.goog-te-menu2-item span.text:contains(' + lang + ')').get(0).click();
-                                        return false;
-                                    });
+            $('.translation-links a').click(function () {
+                var lang = $(this).data('lang');
+                var $frame = $('.goog-te-menu-frame:first');
+                if (!$frame.size()) {
+                    alert("Error: Could not find Google translate frame.");
+                    return false;
+                }
+                $frame.contents().find('.goog-te-menu2-item span.text:contains(' + lang + ')').get(0).click();
+                return false;
+            });
         </script>
 
     </body>

@@ -307,8 +307,9 @@ ul.list_ok li::before {
     margin-bottom: 30px;
 }
 .title-2{
-    font-size: 18px;
-    margin-bottom: 30px;
+    font-size: 26px;
+margin-bottom: 32px;
+margin-top: 1px;
 }
 .title-3{
     font-size: 36px;
@@ -316,7 +317,7 @@ ul.list_ok li::before {
     font-weight: 500;
 }
 .about-wrap1{
-    padding: 30px 0px 40px 0px;
+    padding: 0px 0px 40px 0px;
 }
 .df-button.th-bg{
     text-decoration: none;

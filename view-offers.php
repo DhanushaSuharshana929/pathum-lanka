@@ -48,6 +48,7 @@ $OFFER = new Offer($id);
         <link href="css/responsive.css" rel="stylesheet">
         <link href="thepalatin_style.css" rel="stylesheet" type="text/css"/>
         <link href="offer-form/style.css" rel="stylesheet" type="text/css"/>
+          <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> 
     </head>
 
     <body>
@@ -162,6 +163,35 @@ $OFFER = new Offer($id);
                                     </div><!-- End col-md-9  -->
 
                                 </div>
+                                <div class=" tour-des">
+                                    <div class="col-md-3">
+                                        <h3>Pick up & drop off location </h3>
+                                    </div>
+                                    <div class="col-md-9">
+
+                                        <ul class="list_ok">
+                                            <li>Airport or Your hotel</li>
+                                        </ul>
+                                       
+
+                                    </div><!-- End col-md-9  -->
+
+                                </div>
+                                <div class=" tour-des">
+                                    <div class="col-md-3">
+                                        <h3>Can it be tailor-made ?   </h3>
+                                    </div>
+                                    <div class="col-md-9">
+
+    <ul class="list_ok">
+                                            <li>Yes, we can customize the trip for you. If you want to go to any places not listed on the route, let us know ahead, we'll  make arrangements for that.
+</li>
+                                        </ul>
+                                       
+                                        
+                                    </div><!-- End col-md-9  -->
+
+                                </div>
 
 
                             </div>
@@ -230,7 +260,7 @@ $OFFER = new Offer($id);
                                                     <span id="spanDate"></span>
                                                 </div>
 <!--                                                <label>:<span class="red">*</span></label>-->
-                                                <input type="date"  maxlength="100" class="form-control datepicker" name="txtDate"  placeholder="Tour Date" id="txtDate"   required>
+                                                <input type="text"  maxlength="100" class="form-control datepicker" name="txtDate"  placeholder="Starting On" id="txtDate"   required>
                                             </div>
                                             <!--Input Field End-->
                                         </div>
@@ -400,9 +430,16 @@ $OFFER = new Offer($id);
 
 <script src="js/dl-menu/jquery.dlmenu.js"></script>
 <script src="offer-form/scripts.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <!-- Custom jQuery Library -->
 
 <script src="js/custom.js"></script>
+        <script>
+            $(function () {
+                $(".datepicker").datepicker();
+            });
+
+        </script>
 <script type="text/javascript">
     function googleTranslateElementInit() {
         new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
