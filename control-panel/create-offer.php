@@ -64,10 +64,10 @@ include_once(dirname(__FILE__) . '/auth.php');
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-12">
+                                    <div class="col-md-12 hidden" >
                                         <div class="form-group form-float">
                                             <div class="form-line">
-                                                <input type="text" id="price2" class="form-control" autocomplete="off" name="price2" required="true">
+                                                <input type="text" id="price2" class="form-control" autocomplete="off" value="-" name="price2" required="true">
                                                 <label class="form-label">Price 2</label>
                                             </div>
                                         </div>
@@ -112,18 +112,18 @@ include_once(dirname(__FILE__) . '/auth.php');
                                         </div>
 
                                     </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden">
                                         <label for="description">Price List 2</label>
                                         <div class="form-line">
-                                            <textarea id="accommodation2" name="accommodation2" class="form-control long-text" rows="5"></textarea> 
+                                            <textarea id="accommodation2" name="accommodation2" class="form-control long-text" rows="5">-</textarea> 
                                         </div>
 
                                     </div>
                                
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden">
                                         <label for="description">Price List 2- Hotels</label>
                                         <div class="form-line">
-                                            <textarea id="accommodation_h2" name="accommodation_h2" class="form-control long-text" rows="5"></textarea> 
+                                            <textarea id="accommodation_h2" name="accommodation_h2" class="form-control long-text" rows="5">-</textarea> 
                                         </div>
 
                                     </div>

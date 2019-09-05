@@ -48,7 +48,7 @@ $OFFER = new Offer($id);
         <link href="css/responsive.css" rel="stylesheet">
         <link href="thepalatin_style.css" rel="stylesheet" type="text/css"/>
         <link href="offer-form/style.css" rel="stylesheet" type="text/css"/>
-          <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> 
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> 
     </head>
 
     <body>
@@ -79,122 +79,161 @@ $OFFER = new Offer($id);
 
 
                         <div class="row">
-
                             <div class="col-lg-8">
-                                <div class="offer-title2">   
-                                    <h3 class="text-left">  <?php echo $OFFER->title; ?></h3>
-                                </div>
-                                <div >
-                                    <div class="col-lg-6 col-md-3">
-                                        <div class="box-offer">
-                                            <h2>Package 01</h2>
-                                            <div class="box-title"><h3><span class="from-color">From</span> $<?php echo $OFFER->price; ?></h3></div>
-                                            <?php echo $OFFER->accommodation1; ?>
-                                            <button type="submit" id="myBtn1" class="contact-btn df-button sm-button th-bg">View Accomadations</button>
+                                <div class="property-wrap ftco-animate fadeInUp ftco-animated">
+                                    <div class="text">
+                                        <div class="row">
 
+                                            <div class="col-md-11">
 
-                                            <!-- The Modal -->
-                                            <div id="myModal_1" class="modal">
-
-                                                <!-- Modal content -->
-                                                <div class="modal-content">
-                                                    <span class="close">&times;</span>
-                                                 <h4>Hotels</h4>
-                                                    <?php echo $OFFER->accommodation_h1; ?>
+                                                <h3 style="margin-bottom: 10px;"><a href="#" style="color: #f23232;"><span style="font-size: 24px; color: #15a2e0;"><?php echo $OFFER->title; ?>  </span>
+                                                        <span style="font-size:36px;color:#f23232;">FROM $<?php echo $OFFER->price; ?></span></a></h3>
+                                                <div class="box-offer">
+                                                    <?php echo $OFFER->accommodation1; ?>
                                                 </div>
-
                                             </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="col-lg-6 col-md-3">
-                                        <div class="box-offer">
-                                            <h2>Package 02</h2>
-                                            <div class="box-title"><h3><span class="from-color">From</span> $<?php echo $OFFER->price2; ?></h3></div>
-                                            <?php echo $OFFER->accommodation2; ?>
-                                            <button type="submit" id="myBtn2" class="contact-btn df-button sm-button th-bg">View Accomadations</button>
-                                            <div id="myModal_2" class="modal">
-
-                                                <!-- Modal content -->
-                                                <div class="modal-content">
-                                                    <span class="close">&times;</span>
-                                                    <h4>Hotels</h4>
-                                                    <?php echo $OFFER->accommodation_h2; ?>
-                                                </div>
-
+                                            <div class="col-md-1">
+                                                <a href="#" class="d-flex align-items-center justify-content-center btn-custom hidden-xs hidden-sm">
+                                                    <img src="images/offer.png">
+                                                </a>
                                             </div>
+
                                         </div>
+                                    </div>
+
+                                </div>
+                                <div class="tour-des-box">
+                                    <div class=" tour-des">
+                                        <div class="col-md-3">
+                                            <h3>Pick up & drop off location </h3>
+                                        </div>
+                                        <div class="col-md-9">
+
+                                            <ul class="list_ok">
+                                                <li>Airport or Your hotel</li>
+                                            </ul>
+
+
+                                        </div><!-- End col-md-9  -->
+
+                                    </div>
+                                    <div class=" tour-des">
+                                        <div class="col-md-3">
+                                            <h3>What to Expect</h3>
+                                        </div>
+                                        <div class="col-md-9">
+
+                                            <?php echo $OFFER->description; ?>
+
+                                        </div><!-- End col-md-9  -->
+
+                                    </div>
+                                    <div class=" tour-des">
+                                        <div class="col-md-3">
+                                            <h3>Include</h3>
+                                        </div>
+                                        <div class="col-md-9">
+
+                                            <?php echo $OFFER->include; ?>
+
+
+                                        </div><!-- End col-md-9  -->
+
+                                    </div>
+                                    <div class=" tour-des">
+                                        <div class="col-md-3">
+                                            <h3>Not Include</h3>
+                                        </div>
+                                        <div class="col-md-9">
+
+
+                                            <?php echo $OFFER->notinclude; ?>
+
+                                        </div><!-- End col-md-9  -->
+
+                                    </div>
+                                    <div class=" tour-des">
+                                        <div class="col-md-3">
+                                            <h3>Accommadation </h3>
+                                        </div>
+                                        <div class="col-md-9">
+
+                                            <?php echo $OFFER->accommodation_h1; ?>
+
+
+                                        </div><!-- End col-md-9  -->
+
+                                    </div>
+
+                                    <div class=" tour-des">
+                                        <div class="col-md-3">
+                                            <h3>Can it be tailor-made ?   </h3>
+                                        </div>
+                                        <div class="col-md-9">
+
+                                            <ul class="list_ok">
+                                                <li>Yes, we can customize the trip for you. If you want to go to any places not listed on the route, let us know ahead, we'll  make arrangements for that.
+                                                </li>
+                                            </ul>
+
+
+                                        </div><!-- End col-md-9  -->
 
                                     </div>
                                 </div>
-
-                                <div class=" tour-des">
-                                    <div class="col-md-3">
-                                        <h3>What to Expect</h3>
-                                    </div>
-                                    <div class="col-md-9">
-
-                                        <?php echo $OFFER->description; ?>
-
-                                    </div><!-- End col-md-9  -->
-
-                                </div>
-                                <div class=" tour-des">
-                                    <div class="col-md-3">
-                                        <h3>Include</h3>
-                                    </div>
-                                    <div class="col-md-9">
-
-                                        <?php echo $OFFER->include; ?>
-
-
-                                    </div><!-- End col-md-9  -->
-
-                                </div>
-                                <div class=" tour-des">
-                                    <div class="col-md-3">
-                                        <h3>Not Include</h3>
-                                    </div>
-                                    <div class="col-md-9">
-
-
-                                        <?php echo $OFFER->notinclude; ?>
-
-                                    </div><!-- End col-md-9  -->
-
-                                </div>
-                                <div class=" tour-des">
-                                    <div class="col-md-3">
-                                        <h3>Pick up & drop off location </h3>
-                                    </div>
-                                    <div class="col-md-9">
-
-                                        <ul class="list_ok">
-                                            <li>Airport or Your hotel</li>
-                                        </ul>
-                                       
-
-                                    </div><!-- End col-md-9  -->
-
-                                </div>
-                                <div class=" tour-des">
-                                    <div class="col-md-3">
-                                        <h3>Can it be tailor-made ?   </h3>
-                                    </div>
-                                    <div class="col-md-9">
-
-    <ul class="list_ok">
-                                            <li>Yes, we can customize the trip for you. If you want to go to any places not listed on the route, let us know ahead, we'll  make arrangements for that.
-</li>
-                                        </ul>
-                                       
-                                        
-                                    </div><!-- End col-md-9  -->
-
-                                </div>
-
-
                             </div>
+                            <!--                            <div class="col-lg-8">
+                                                            <div class="offer-title2">   
+                                                                <h3 class="text-left">  <?php echo $OFFER->title; ?></h3>
+                                                            </div>
+                                                            <div >
+                                                                <div class="col-lg-6 col-md-3">
+                                                                                                <div class="box-offer">
+                                                                        <h2>Package 01</h2>
+                                                                        
+                            <?php echo $OFFER->accommodation1; ?>
+                                                                        <button type="submit" id="myBtn1" class="contact-btn df-button sm-button th-bg">View Accomadations</button>
+                            
+                            
+                                                                         The Modal 
+                                                                        <div id="myModal_1" class="modal">
+                            
+                                                                             Modal content 
+                                                                            <div class="modal-content">
+                                                                                <span class="close">&times;</span>
+                                                                                <h4>Hotels</h4>
+                            <?php echo $OFFER->accommodation_h1; ?>
+                                                                            </div>
+                            
+                                                                        </div>
+                                                                    </div>
+                            
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-3">
+                                                                    <div class="box-offer">
+                                                                        <h2>Package 02</h2>
+                                                                        <div class="box-title"><h3><span class="from-color">From</span> $<?php echo $OFFER->price2; ?></h3></div>
+                            <?php echo $OFFER->accommodation2; ?>
+                                                                        <button type="submit" id="myBtn2" class="contact-btn df-button sm-button th-bg">View Accomadations</button>
+                                                                        <div id="myModal_2" class="modal">
+                            
+                                                                             Modal content 
+                                                                            <div class="modal-content">
+                                                                                <span class="close">&times;</span>
+                                                                                <h4>Hotels</h4>
+                            <?php echo $OFFER->accommodation_h2; ?>
+                                                                            </div>
+                            
+                                                                        </div>
+                                                                    </div>
+                            
+                                                                </div>
+                                                            </div>
+                            
+                                                                
+                            
+                            
+                                                        </div>-->
 
 
                             <div class="col-lg-4 col-md-3">
@@ -202,20 +241,20 @@ $OFFER = new Offer($id);
                                     <h3 class="text-left">Book Offer - <?php echo $OFFER->title; ?></h3>
                                 </div>
                                 <div id="contact" class="contact-form" >
-                            
-                                                                        <div class="row form-group">
-                                                                            <div class="col-md-12 col-sm-6">
-<!--                                                                                Input Field Start-->
-                                                                                <div class="input-field">
-                                                                                    <div class="col-md-12">
-                                                                                        <span id="spanTour"></span>
-                                                                                    </div>
 
-                                                                                    <input type="text"  maxlength="100" class="form-control " name="txtTour"  placeholder="Tour Name" id="txtTour"  value="<?php echo $OFFER->title;?>" readonly required>
-                                                                                </div>
-<!--                                                                                Input Field End-->
-                                                                            </div>
-                                                                        </div>
+                                    <div class="row form-group">
+                                        <div class="col-md-12 col-sm-6">
+                                            <!--                                                                                Input Field Start-->
+                                            <div class="input-field">
+                                                <div class="col-md-12">
+                                                    <span id="spanTour"></span>
+                                                </div>
+
+                                                <input type="text"  maxlength="100" class="form-control " name="txtTour"  placeholder="Tour Name" id="txtTour"  value="<?php echo $OFFER->title; ?>" readonly required>
+                                            </div>
+                                            <!--                                                                                Input Field End-->
+                                        </div>
+                                    </div>
                                     <div class="row form-group">
                                         <div class="col-md-6 col-sm-12">
                                             <!--Input Field Start-->
@@ -434,12 +473,12 @@ $OFFER = new Offer($id);
 <!-- Custom jQuery Library -->
 
 <script src="js/custom.js"></script>
-        <script>
-            $(function () {
-                $(".datepicker").datepicker();
-            });
+<script>
+    $(function () {
+        $(".datepicker").datepicker();
+    });
 
-        </script>
+</script>
 <script type="text/javascript">
     function googleTranslateElementInit() {
         new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');

@@ -75,7 +75,7 @@ $OFFER = new Offer($id);
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-12">
+                                    <div class="col-md-12 hidden">
                                         <div class="form-group form-float">
                                             <div class="form-line">
                                                 <input type="text" id="price2" class="form-control"  value="<?php echo $OFFER->price2; ?>"  name="price2"  required="TRUE">
@@ -128,7 +128,7 @@ $OFFER = new Offer($id);
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-12">
+                                    <div class="col-sm-12 hidden">
                                         <div class="form-group form-float">
                                               <label class="form-label">Price List 2</label>
                                             <div class="form-line">
@@ -138,7 +138,7 @@ $OFFER = new Offer($id);
                                         </div>
                                     </div>
                                   
-                                    <div class="col-sm-12">
+                                    <div class="col-sm-12 hidden">
                                         <div class="form-group form-float">
                                               <label class="form-label">Price List 2- Hotels</label>
                                             <div class="form-line">
