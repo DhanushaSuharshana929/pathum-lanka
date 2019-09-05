@@ -244,7 +244,7 @@ $OFFER = $OFFER_OBJ->all();
                                 }
                                 ?>
                                 <p>
-                                    <a href="https://pathumlankatours.com/tour-packages.php?type=1" class="t-btn df-button th-bg bt">View All Offers</a>
+                                    <a href="https://pathumlankatours.com/tour-packages.php?type=1" class="t-btn df-button th-bg bt">View Day Tours</a>
                                 </p>
                             </div><!-- End col-lg-3 -->
                         </div>
@@ -514,7 +514,7 @@ $OFFER = $OFFER_OBJ->all();
         <script>
                                  $readMoreJS.init({
                                      target: '.dummy p', // Selector of the element the plugin applies to (any CSS selector, eg: '#', '.'). Default: ''
-                                     numOfWords: 20, // Number of words to initially display (any number). Default: 50
+                                     numOfWords: 25, // Number of words to initially display (any number). Default: 50
                                      toggle: true, // If true, user can toggle between 'read more' and 'read less'. Default: true
                                      moreLink: 'Read More', // The text of 'Read more' link. Default: 'read more ...'
                                      lessLink: 'Read Less'         // The text of 'Read less' link. Default: 'read less'
