@@ -207,7 +207,7 @@ $OFFER = $OFFER_OBJ->all();
                                                             <small>From</small>   <span class="normal_price_list">$<?php echo $offer["price"]; ?></span>
 
 
-                                                            <p>
+                                                            <p class="bt-pd">
                                                                 <a href="view-offers.php?id=<?php echo $offer["id"]; ?>" class="btn_1">Book Now</a>
                                                             </p>
                                                         </div>

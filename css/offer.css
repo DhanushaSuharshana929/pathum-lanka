@@ -67,13 +67,17 @@
     position: relative;
     top: -10px;
 }
+.bt-pd{
+    margin-top: 50px;
+}
 .price_list .normal_price_list {
     display: block;
-    color: #e74c3c;
-    font-size: 24px;
+    color: #dd1f0c;
+    font-size: 45px;
+    font-weight: 600;
 }
 .price_list small {
-    font-size: 11px;
+    font-size: 24px;
     color: #999;
     display: block;
     line-height: 12px;
