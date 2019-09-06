@@ -53,8 +53,9 @@
                     <ul>           
                         <li class="active"><a href="index.php">Home</a></li>
                         <li><a href="services.php">Services</a></li>
+                        <li><a href="news-and-offers.php">Offer</a></li>
                         <li><a href="tour-packages.php?type=1">Day Tours</a></li>
-                        <li><a href="tour-packages.php?type=2">Tour Packages</a></li>
+                        <li><a href="tour-packages.php?type=2">Round Tours</a></li>
                         <li><a href="gallery.php">Gallery</a></li>
                         <li><a href="booking.php">Tailor Made Tour</a></li>
                         <li> 
@@ -74,11 +75,11 @@
                     <ul id="mob-nav" class="dl-menu">
                         <li class="active"><a href="index.php">Home</a></li>
                         <li><a href="services.php">Services</a></li>
+                        <li><a href="news-and-offers.php">Offer</a></li>
                         <li><a href="tour-packages.php?type=1">Day Tours</a></li>
-                        <li><a href="tour-packages.php?type=2">Tour Packages</a></li>
+                        <li><a href="tour-packages.php?type=2">Round Tours</a></li>
                         <li><a href="gallery.php">Gallery</a></li>
                         <li><a href="booking.php">Tailor Made Tour</a></li>
-
                         <li class="menu-item iq-parent-menu">
                             <a href="#">Excursions</a>
                             <ul class="dl-submenu">
