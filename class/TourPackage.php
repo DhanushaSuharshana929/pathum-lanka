@@ -188,7 +188,7 @@ class TourPackage {
         return $result;
     }
     public function selectOneDayTours() {
-        $query = "SELECT * FROM `tour_package`  WHERE `type`=1";
+        $query = "SELECT * FROM `tour_package`  WHERE `type`=1 ORDER BY queue ASC ";
        $db = new Database();
 
         $result = $db->readQuery($query);
