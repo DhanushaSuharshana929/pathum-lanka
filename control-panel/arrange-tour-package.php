@@ -78,6 +78,7 @@ $TOUR_PACKAGE = new TourPackage(NULL);
                                                 </div>
                                             </div>
                                         </div> 
+                         
                                     </div>
                                 </form>
 

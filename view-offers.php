@@ -380,7 +380,7 @@ $OFFER = new Offer($id);
             </div>
         </div>
     </section>
-    <?php include './contact-slider.php' ?>
+ 
 
     <!--Cars Detail Section End-->
 

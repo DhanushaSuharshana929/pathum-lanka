@@ -73,14 +73,18 @@
 .price_list .normal_price_list {
     display: block;
     color: #dd1f0c;
-    font-size: 45px;
-    font-weight: 600;
+    font-size: 28px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
 }
 .price_list small {
     font-size: 24px;
-    color: #999;
+    color: #aaa;
     display: block;
     line-height: 12px;
+     font-weight: 500;
+     font-family: 'Oswald', sans-serif;
+     margin-bottom: 10px;
 }
 a.btn_1, .btn_1 {
     border: none;
