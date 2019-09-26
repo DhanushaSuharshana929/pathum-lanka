@@ -516,15 +516,6 @@ $company_message = '
 
                                                 </li>
 
-//                                              <li>
-//
-//                                                    <font style="font-family: Verdana, Geneva, sans-serif; color:#68696a; font-size:14px; " >
-//
-//                                                       How Did Your Hear About Us: ' . implode(", ", $visitor_prefers) . '
-//
-//                                                    </font>
-//
-//                                                </li>
 
 
                                             
